@@ -1,0 +1,80 @@
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.marathon-popup {
+  max-width: 1382px;
+  padding-top: 70px;
+  padding-bottom: 105px;
+  background: #ffffff;
+  border: 1px solid #a9d0e2;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.marathon-popup__container {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+
+.marathon__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 135%;
+  /* or 49px */
+
+  color: #000000;
+  margin-bottom: 60px;
+}
+.marathon__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #000000;
+}
+.marathon__text p {
+  margin-bottom: 30px;
+}
+.marathon__text a {
+  color: #0D3E89;
+  display: inline-block;
+}
+.marathon {
+}

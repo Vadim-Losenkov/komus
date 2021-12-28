@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=1920px"> <!-- device-width, initial-scale=1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- device-width, initial-scale=1 -->
 
   <title>Документ без названия</title>
   <link rel="stylesheet" href="/assets/frontend/fonts/ptrootui.css">
@@ -10,12 +11,17 @@
   <link href="css/headStyles.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
   <script src="js/svg.js/svg.min.js"></script>
   <script src="js/jQuery-3.5.1/jquery-3.5.1.min.js"></script>
   <script src="js/svg_animation_script.js"></script>
   <script src="js/flyed_boxes_animation_script.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/custom-popup.css">
   <link rel="stylesheet" href="css/bodyStyles.css">
 
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -37,12 +43,14 @@
       <div class="mainMenu__wrapper">
 
         <a class="mobileMenuHamburger" href="/">
-          <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 30h30v-3.33H5V30Zm0-8.33h30v-3.34H5v3.34ZM5 10v3.33h30V10H5Z" fill="#fff" /></svg>
+          <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 30h30v-3.33H5V30Zm0-8.33h30v-3.34H5v3.34ZM5 10v3.33h30V10H5Z" fill="#fff" />
+          </svg>
         </a>
 
         <div class="mainMenu__logo">
           <a class="mainMenuLogo__link" href="/">
-            <img class="mainMenuLogo__image" src="images/logo_optimized.svg" alt="logo" title="logo" />
+            <img class="mainMenuLogo__image" src="images/new-logo.png" alt="logo" title="logo" />
           </a>
         </div>
 
@@ -50,7 +58,9 @@
           <!-- -->
           <a class="mobileMenuCloseBtn">
             <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M28 2.82 25.18 0 14 11.18 2.82 0 0 2.82 11.18 14 0 25.18 2.82 28 14 16.82 25.18 28 28 25.18 16.82 14 28 2.82Z" fill="#fff" />
+              <path
+                d="M28 2.82 25.18 0 14 11.18 2.82 0 0 2.82 11.18 14 0 25.18 2.82 28 14 16.82 25.18 28 28 25.18 16.82 14 28 2.82Z"
+                fill="#fff" />
             </svg>
           </a>
 
@@ -144,6 +154,11 @@
               <a class="categorySelection__button" href="index2.html">Получить знания</a>
             </div>
           </div>
+
+          <a href="#" class="red-btn arrow">
+            ценности agile
+            <div class="circle"></div>
+          </a>
         </div>
 
         <div class="categorySelection__center">
@@ -177,8 +192,11 @@
     </div>
 
     <div class="animation-block__bottom">
-      <svg id="svg-animation-bottom" width="1602" height="253" viewBox="20 0 1602 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1591 202.75V68.7484C1531 60.7489 1418 54.7489 1418 54.7489L1303 68.7484C1303 68.7484 262.229 88.4165 5 88.4165V202.75H1591Z" fill="white" />
+      <svg id="svg-animation-bottom" width="1602" height="253" viewBox="20 0 1602 203" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1591 202.75V68.7484C1531 60.7489 1418 54.7489 1418 54.7489L1303 68.7484C1303 68.7484 262.229 88.4165 5 88.4165V202.75H1591Z"
+          fill="white" />
         <path id="fill_box_0" class="fill_box" d="M168.001 66.7489H250.001V148.749H168.001V66.7489Z" fill="white" />
         <path id="fill_box_1" class="fill_box" d="M101.001 48.7489H183.001V130.749H101.001V48.7489Z" fill="white" />
         <path id="fill_box_2" class="fill_box" d="M271.001 53.7489H353.001V135.749H271.001V53.7489Z" fill="white" />
@@ -204,7 +222,9 @@
         <path id="fill_box_22" class="fill_box" d="M1316 41.7489H1398V123.749H1316V41.7489Z" fill="white" />
         <path id="fill_box_23" class="fill_box" d="M1367 19.5199H1449V101.52H1367V19.5199Z" fill="white" />
         <path id="fill_box_24" class="fill_box" d="M1424 0H1506V81.9999H1424V0Z" fill="white" />
-        <path id="fill_box_25" class="fill_box" d="M1474 27.749H1556C1556 27.749 1556 52.7375 1556 68.7489C1556 84.7604 1556 109.749 1556 109.749H1474V27.749Z" fill="white" />
+        <path id="fill_box_25" class="fill_box"
+          d="M1474 27.749H1556C1556 27.749 1556 52.7375 1556 68.7489C1556 84.7604 1556 109.749 1556 109.749H1474V27.749Z"
+          fill="white" />
         <path id="fill_box_26" class="fill_box" d="M51.0009 81.9999H133.001V174.251H51.0009V81.9999Z" fill="white" />
         <path id="fill_box_27" class="fill_box" d="M1520 35.749H1602V76.7489V117.749H1520V35.749Z" fill="white" />
         <path id="fill_box_28" class="fill_box" d="M0 71.7491H82V164H0V71.7491Z" fill="white" />
@@ -287,56 +307,84 @@
   </div>
   <div class="academy">
     <div class="container">
-        <div class="academy-title">Академия цифры</div>
-        <div class="parent">
-        <div class="div div1">
-            
-           <div class="div-wrap">
-            <div class="dtitle">Понедельник, 12 мая</div>
-            <div class="dbold dbold2">Не следует, однако забывать</div>
-            <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-            <div class="dread"><a href="#">Читать дальше...</a></div>
-        </div>
-        </div>
-        <div class="div div2">
-            <div class="dtitle">Понедельник, 12 мая</div>
-            <div class="dbold dbold1">Повседневная практика</div>
-            <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-            <div class="dread"><a href="#">Читать дальше...</a></div>
-        </div>
-        <div class="div div3">
-            <div class="dtitle">Понедельник, 12 мая</div>
-            <div class="dbold">Идейные соображения высшего порядка</div>
-            <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-            <div class="dread"><a href="#">Читать дальше...</a></div>
-        </div>
-        <div class="div div4">
-            <div class="div-wrap">
+      <div class="academy-title">Академия цифры</div>
+      <div class="parent">
+        <div class="parent__wrapper" data-academy>
+          <div class="parent__inner">
+            <div class="div div1" data-academy-item="">
+              <div class="div-wrap">
+                <div class="dtitle">Понедельник, 12 мая</div>
+                <div class="dbold dbold2">Не следует, однако забывать</div>
+                <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+                <div class="dread"><a class="p" href="#marathon-popup">Читать дальше...</a></div>
+              </div>
+            </div>
+            <div class="div div2" data-academy-item="">
+              <div class="dtitle">Понедельник, 12 мая</div>
+              <div class="dbold dbold1">Повседневная практика</div>
+              <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+              <div class="dread"><a href="#">Читать дальше...</a></div>
+            </div>
+            <div class="div div3" data-academy-item="">
+              <div class="dtitle">Понедельник, 12 мая</div>
+              <div class="dbold">Идейные соображения высшего порядка</div>
+              <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+              <div class="dread"><a href="#">Читать дальше...</a></div>
+            </div>
+            <div class="div div4" data-academy-item="">
+              <div class="div-wrap">
                 <div class="dtitle">Понедельник, 12 мая</div>
                 <div class="dbold">Не следует, однако забывать</div>
                 <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
                 <div class="dread"><a href="#">Читать дальше...</a></div>
+              </div>
             </div>
-        </div>
-        <div class="div div5"> 
-            <div class="div-wrap">
-                <div class="dtitle">Понедельник, 12 мая</div>
-                <div class="dbold">Не следует, однако забывать</div>
-                <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-                <div class="dread"><a href="#">Читать дальше...</a></div>
-            </div>
-        </div>
-        <div class="div div6">
-            <div class="div-wrap">
+            <div class="div div5" data-academy-item="">
+              <div class="div-wrap">
                 <div class="dtitle">Понедельник, 12 мая</div>
                 <div class="dbold">Задача организации</div>
                 <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
                 <div class="dread"><a href="#">Читать дальше...</a></div>
+              </div>
             </div>
+          </div>
+          <div class="parent__inner">
+            <div class="div div1" data-academy-item="">
+              <div class="div-wrap">
+                <div class="dtitle">Понедельник, 12 мая</div>
+                <div class="dbold dbold2">Не следует, однако забывать</div>
+                <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+                <div class="dread"><a href="#">Читать дальше...</a></div>
+              </div>
+            </div>
+            <div class="div div2" data-academy-item="">
+              <div class="dtitle">Понедельник, 12 мая</div>
+              <div class="dbold dbold1">Повседневная практика</div>
+              <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+              <div class="dread"><a href="#">Читать дальше...</a></div>
+            </div>
+            <div class="div div3" data-academy-item="">
+              <div class="dtitle">Понедельник, 12 мая</div>
+              <div class="dbold">Идейные соображения высшего порядка</div>
+              <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+              <div class="dread"><a href="#">Читать дальше...</a></div>
+            </div>
+          </div>
         </div>
-        
-        </div></div>
-</div>
+        <div class="parent__aside">
+          <div class="div div6">
+            <div class="div-wrap">
+              <div class="dtitle">Понедельник, 12 мая</div>
+              <div class="dbold">Не следует, однако забывать</div>
+              <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+              <div class="dread"><a href="#">Читать дальше...</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <div class="gloss">
     <div class="container">
       <div class="gloss-wrapper">
@@ -348,7 +396,8 @@
             Глоссарий
           </div>
           <div class="gloss-text">
-            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
+            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном
+            языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
           </div>
           <div class="gloss-btn">
             <a href="#" class="blue-btn gloss">Читать всё</a>
@@ -474,6 +523,51 @@
     </div>
   </footer>
 
+
+    <div id="marathon-popup" class="popup">
+      <div class="marathon-popup__container">
+        <div class="marathon__info">
+          <h2 class="marathon__title">
+            Марафон открытых вебинаров
+          </h2>
+          <div class="marathon__text">
+            <p>Коллеги, мы проанализировали ваши ответы на опрос по Марафону в Телеграм-канале и анонсируем темы
+              Открытых вебинаров на декабрь
+              с учетом ваших пожеланий!
+            </p>
+            <p>
+              Повышайте уровень мастерства, обменивайтесь опытом с коллегами из других регионов, решайте практические
+              кейсы и заряжайтесь энергией, участвуя в 3 серии Марафона знаний!
+            </p>
+            <p>
+              Ознакомиться с расписанием, выбрать актуальную тему и записаться вы можете по ссылке: 
+              <a href="https://forms.gle/qqcCZxQHdJY7Zmnt8">https://forms.gle/qqcCZxQHdJY7Zmnt8</a>
+            </p>
+            <p>
+              Напоминаем, что участие носит свободный характер!
+            </p>
+          </div>
+          <div class="marathon__footer">
+            <p>Марафон Знаний 4 квартал Серия 3</p>
+            <a href="#" class="blue-btn arrow">
+              Скачать
+              <div class="circle"></div>
+            </a>
+            <a href="#" class="yellow-btn arrow">
+              Архив новостей
+              <div class="circle"></div>
+            </a>
+          </div>
+        </div>
+        <div class="marathon__image">
+          <img src="images/marathon.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- https://www.figma.com/file/AcNmvcpOZ9nRXCkHKkDMJd/other-pages?node-id=0%3A1 -->
+
+  
   <script src="js/main.js"></script>
 </body>
+
 </html>
