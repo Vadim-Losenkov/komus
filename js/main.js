@@ -29,7 +29,7 @@
 //   }
 // })
 
-
+/*
 $(function() {
   $('.p').magnificPopup({
     type: 'inline',
@@ -41,4 +41,14 @@ $(function() {
     },
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   })
+})
+*/
+
+// ПЕРЕНЕСТИ ВСЕ ЧТО ВЫШЕ В index.js 
+
+$(".reviews__item-rate").rateYo({
+  readOnly: true,
+  ratedFill: "#fda700",
+  normalFill: "#c4c4c4",
+  starWidth: "12px"
 })

@@ -52,6 +52,7 @@ p {
 .yellow-btn.arrow,
 .blue-btn.arrow {
     padding: 0px 20px;
+    box-sizing: content-box;
     position: relative;
     font-size: 22px;
     line-height: 26px;

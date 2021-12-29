@@ -1,0 +1,136 @@
+body {
+  /*min-width: 450px;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.marathon {
+  font-family: 'Fira Sans';
+}
+.marathon__item-image {
+  display: none;
+  
+}
+
+.marathon__back a {
+  color: #015FA3;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 35px;
+  margin-top: 45px;
+  position: relative;
+  padding-left: 25px;
+  position: relative;
+  display: block;
+}
+.marathon__back a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icons/blue-arrow-left.svg');
+  left: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.marathon__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.marathon__footer {
+  display: flex;
+  align-items: center;
+}
+.marathon__footer p {
+  margin-right: 30px;
+}
+.marathon__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 135%;
+  /* or 49px */
+
+  color: #000000;
+  margin-bottom: 60px;
+}
+.marathon__info {
+  margin-right: 30px;
+}
+.marathon__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #000000;
+}
+.marathon__text p {
+  margin-bottom: 30px;
+}
+.marathon__text a {
+  color: #0D3E89;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .marathon__title {
+    text-align: center;
+  }
+  .marathon__info {
+    margin-right: 0;
+  }
+  .marathon__item-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .marathon__item-image img {
+    width: 100%;
+  }
+  .marathon__image {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .marathon__back a {
+    font-size: 12px;
+  }
+  .marathon__back a::before {
+    width: 12px;
+    height: 12px;
+  }
+  .marathon__text p {
+    font-size: 12px;
+  }
+  .marathon__footer {
+    display: block;
+  }
+  .marathon__footer p {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .marathon__footer a.arrow {
+    font-size: 14px;
+    width: 120px!important;
+    height: 40px;
+  }
+  .marathon__footer a.arrow .circle {
+    height: 26px;
+    width: 26px;
+  }
+}

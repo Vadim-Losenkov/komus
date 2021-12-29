@@ -52,29 +52,5 @@
   margin: 0 auto;
 }
 
-.marathon__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 135%;
-  /* or 49px */
-
-  color: #000000;
-  margin-bottom: 60px;
-}
-.marathon__text {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150%;
-  /* or 27px */
-
-  color: #000000;
-}
-.marathon__text p {
-  margin-bottom: 30px;
-}
-.marathon__text a {
-  color: #0D3E89;
-  display: inline-block;
-}
 .marathon {
 }

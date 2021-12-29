@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1000px;
+  font-family: 'Fira Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.driver {
+  margin-top: 100px;
+  margin-bottom: 74px;
+}
+.driver__item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.driver__item-headlink {
+  color: #0d3e89;
+  position: relative;
+  padding-right: 20px;
+}
+.driver__item-headlink::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(-1, 1);
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/icons/pencil.svg');
+  right: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.driver__item-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 64px;
+  color: #000000;
+}
+.driver__item {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid  #A9D0E2;
+  border-radius: 20px;
+  display: flex;
+}
+.driver__item-info {
+  padding: 40px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.driver__item-image {
+  border-radius: 0 20px 0 20px;
+}
+
+.driver__item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.driver__item-footerbuttons {
+  display: flex;
+}
+.driver__item-text {
+  margin-bottom: 60px;
+  font-weight: 300;
+font-size: 18px;
+line-height: 135%;
+/* or 24px */
+
+
+color: #000000;
+
+}
+.driver__item-counter {
+  display: flex;
+}
+.reviews__item-count,
+.driver__item-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+line-height: 100%;
+/* or 11px */
+
+text-align: center;
+
+color: #3A3A3A;
+}
+.driver__item-count + .driver__item-count {
+  margin-left: 35px;
+}
+.reviews__item-count img,
+.driver__item-count img {
+  margin-bottom: 5px;
+}
+.driver__item-footerbuttons a {
+  display: inline-block;
+}
+.driver__item-footerbuttons a:first-child {
+  margin-right: 35px;
+}
+
+.reviews__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 64px;
+  color: #18191F;
+  margin-bottom: 40px;
+}
+
+.reviews__items {
+  display: grid;
+  grid-template-columns: repeat(3, 440px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.reviews__item-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  background-color: #3DA3E2;
+  margin-right: 64px;
+}
+.reviews__item-addtext {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.reviews__item {
+  padding: 26px;
+  padding-bottom: 16px;
+  max-width: 440px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid  #A9D0E2;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.reviews__item-add {
+  justify-content: flex-start;
+}
+
+.reviews__item-image {
+  margin-right: 32px;
+}
+.reviews__item-image img,
+.reviews__item-image {
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+}
+.reviews__item-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #18191F;
+}
+.reviews__item-rate {
+  margin-top: 5px;
+  margin-left: -5px;
+  margin-bottom: 11px;
+}
+.reviews__item-info {
+  position: relative;
+}
+.reviews__item-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.reviews__item-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #474A57;
+  margin-bottom: 21px;
+}
+
+.reviews__item-link {
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+  position: relative;
+  font-weight: 400;
+  padding-right: 25px;
+}
+.reviews__item-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/icons/arrow-right2.svg');
+  right: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1400px) {
+  .reviews__items {
+    grid-template-columns: repeat(2, 440px);
+    justify-content: center;
+  }
+}
