@@ -335,15 +335,14 @@ p {
 @media (max-width: 500px) {
   .driver__item-footerbuttons a.arrow {
     font-size: 12px !important;
-    min-width: 110px !important;
+    min-width: 115px !important;
     height: 35px !important;
     padding: 0 15px;
   }
-  .driver__item-footerbuttons a.arrow::first-child {
+  .driver__item-footerbuttons .driver__item-button.arrow:first-child {
     min-width: 95px !important;
-    height: 45px;
-    padding: 0 15px;
   }
+  
   .driver__item-headlink {
     font-size: 12px;
     margin-left: 10px;
@@ -360,18 +359,6 @@ p {
   }
   .driver__item-count + .driver__item-count {
     margin-left: 15px;
-  }
-
-  .driver__item-footerbuttons a.arrow {
-    font-size: 14px;
-    min-width: 100px !important;
-    height: 45px;
-    padding: 0 15px;
-  }
-  .driver__item-footerbuttons a.arrow::first-child {
-    min-width: 105px;
-    height: 45px;
-    padding: 0 15px;
   }
 
   .reviews__title {
@@ -437,7 +424,33 @@ p {
     line-height: 17px;
     color: #ffffff;
     background-color: #3DA3E2;
+    position: relative;
     border-radius: 42px;
+  }
+  .reviews__item-add--mobile a .circle {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .reviews__item-add--mobile a .circle::before {
+    content: "";
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/icons/blue-arrow.svg");
+    height: 16px;
+    width: 10px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
   }
 }
 
