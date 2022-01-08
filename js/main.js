@@ -46,6 +46,8 @@ $(function() {
 
 // ПЕРЕНЕСТИ ВСЕ ЧТО ВЫШЕ В index.js 
 
+$('[href="#menuMore"]').on('click', (e) => e.preventDefault())
+
 class Tabson {
 
   constructor(wrapper) {
@@ -61,7 +63,7 @@ class Tabson {
   listener() {
     document.addEventListener('click', event => {
       const $wraper = event.target.closest(this.wrapper)
-      const id = event.target.closest('[data-id]').dataset.id
+      const id = event.target.closest('[data-id]')?.dataset.id
       if ($wraper && id) {
         this.$menu = $wraper.querySelector('[data-tabson="menu"]')
         this.$items = $wraper.querySelector('[data-tabson="items"]')
