@@ -37,20 +37,28 @@
   opacity: 0;
 }
 
+.links__inner {
+  padding-top: 70px;
+}
+.links__item {
+  font-size: 70px;
+}
+.con {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.popups {
+  font-family: 'Fira Sans';
+}
 .marathon-popup {
+  font-family: 'Fira Sans';
   max-width: 1382px;
+  margin: 0 auto;
   padding-top: 70px;
   padding-bottom: 105px;
   background: #ffffff;
   border: 1px solid #a9d0e2;
   box-sizing: border-box;
   border-radius: 20px;
-}
-
-.marathon-popup__container {
-  max-width: 1146px;
-  margin: 0 auto;
-}
-
-.marathon {
 }

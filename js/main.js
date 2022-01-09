@@ -28,6 +28,7 @@ $items.forEach(($item, idx) => {
   }
 })
 
+
 /*
 $(function() {
   $('.p').magnificPopup({
