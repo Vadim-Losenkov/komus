@@ -1,33 +1,36 @@
 const $wrapper = document.querySelector('.parent__wrapper')
-const $items = $wrapper.querySelectorAll('[data-academy-item]')
+if ($wrapper) {
+  const $items = $wrapper.querySelectorAll('[data-academy-item]')
 
-let counter = 0
+  let counter = 0
 
-let inner = document.createElement('div')
-inner.classList.add('parent__inner')
-$wrapper.insertAdjacentElement('beforeend', inner)
+  let inner = document.createElement('div')
+  inner.classList.add('parent__inner')
+  $wrapper.insertAdjacentElement('beforeend', inner)
 
-$items.forEach(($item, idx) => {
-  $item.setAttribute('data-academy-item', counter)
-  $item.setAttribute('id', `academy-${counter}`)
+  $items.forEach(($item, idx) => {
+    $item.setAttribute('data-academy-item', counter)
+    $item.setAttribute('id', `academy-${counter}`)
 
-  if (counter < 5) {
-    $item.classList.add(`academy-item-${counter + 1}`)
-    $item.classList.add('academy__item')
-    inner.insertAdjacentElement('beforeend', $item)
-    counter += 1
-  } else {
-    counter = 0
+    if (counter < 5) {
+      $item.classList.add(`academy-item-${counter + 1}`)
+      $item.classList.add('academy__item')
+      inner.insertAdjacentElement('beforeend', $item)
+      counter += 1
+    } else {
+      counter = 0
 
-    inner = document.createElement('div')
-    inner.classList.add('parent__inner')
-    $wrapper.insertAdjacentElement('beforeend', inner)
+      inner = document.createElement('div')
+      inner.classList.add('parent__inner')
+      $wrapper.insertAdjacentElement('beforeend', inner)
 
-    $item.classList.add(`div${counter + 1}`)
-    inner.insertAdjacentElement('beforeend', $item)
-  }
-})
-
+      $item.classList.add(`academy-item-${counter + 1}`)
+      $item.classList.add('academy__item')
+      inner.insertAdjacentElement('beforeend', $item)
+      counter += 1
+    }
+  })
+}
 
 /*
 $(function() {
@@ -99,7 +102,7 @@ $(".reviews__item-rate").rateYo({
 })
 
 const $progressBar = $('[data-progress]')
-$progressBar.each(function(index) {
+$progressBar.each(function (index) {
   $(this).css({
     width: `${$(this).attr('data-progress')}%`,
     backgroundColor: progressBarColor($(this).attr('data-progress'))
