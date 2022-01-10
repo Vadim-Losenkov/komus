@@ -2,6 +2,10 @@ body {
   /*min-width: 450px;*/
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -86,7 +90,7 @@ p {
   display: inline-block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .marathon__title {
     text-align: center;
   }
