@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1600px">
+  <meta name="viewport" content="width=1600px"> <!-- device-width, initial-scale=1 -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>popups</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap"
-    rel="stylesheet">
+  href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/marathon.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/slick.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/custom-popup.css" type="text/css" media="all" />
 
   <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -46,11 +48,29 @@
         <a href="#text-plus-popup" class="links__item popup-opener" data-effect="mfp-zoom-in">
           text-plus
         </a>
+        <a href="#faq-popup" class="links__item popup-opener" data-effect="mfp-zoom-in">
+          faq-popup
+        </a>
+        <a href="#review-popup" class="links__item popup-opener" data-effect="mfp-zoom-in">
+          review-popup
+        </a>
+        <a href="#command-descr-popup" class="links__item popup-opener" data-effect="mfp-zoom-in">
+          command-descr
+        </a>
+        <a href="#command-popup" class="links__item popup-opener" data-effect="mfp-zoom-in">
+          command-popup
+        </a>
+        <a href="#table-popup" class="links__item popup-opener" data-effect="mfp-zoom-in">
+          table-popup
+        </a>
       </div>
     </div>
   </div>
   <div class="popups">
     <div id="marathon-popup" class="marathon-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="marathon__inner default-popup-container">
         <div class="marathon__info">
           <h2 class="marathon__title">
@@ -99,6 +119,9 @@
       </div>
     </div>
     <div id="index-agile-popup" class="index-agile-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="index-agile__inner default-popup-container">
         <div class="index-agile__top">
           <div class="index-agile__top-info">
@@ -169,6 +192,9 @@
       </div>
     </div>
     <div id="gloss-popup" class="gloss-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="gloss-popup-wrap default-popup-container">
         <h2 class="gloss-popup__title">
           Глоссарий
@@ -386,6 +412,9 @@
       </div>
     </div>
     <div id="gloss-popup-link" class="gloss-popup-link default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="gloss-popup-link__wrapper default-popup-container">
         <h2 class="gloss-popup__title">
           Agile
@@ -398,14 +427,10 @@
         </p>
       </div>
     </div>
-    <div id="tk-commands-popup" class="tk-commands-popup default-popup mfp-with-anim mfp-hide">
-      <div class="tk-commands__inner default-popup-container">
-        <div class="tk-commands__item">
-
-        </div>
-      </div>
-    </div>
     <div id="playlist-popup" class="playlist-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="playlist-popup__inner default-popup-container">
         <h2 class="playlist-popup__title">
           Ключевые объекты и продукты цифровых изменений под цели улучшения удобства работы наших Партнеров
@@ -595,6 +620,9 @@
       </div>
     </div>
     <div id="video-popup" class="video-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="video-popup__inner default-popup-container">
         <h2 class="playlist-popup__title">
           Выступление Олега Андреевича Зорина в рамках Meetup «Взгляд в будущее: сила команд»
@@ -621,6 +649,9 @@
       </div>
     </div>
     <div id="text-plus-popup" class="text-plus-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
       <div class="text-plus__inner default-popup-container">
         <div class="text-plus__head">
           <div class="text-plus__head-image">
@@ -647,20 +678,22 @@
               В 2021 году:
             </h4>
           </div>
-          <div class="text-plus__benefits-col">
-            <h4 class="text-plus__benefits-title">
-              35
-            </h4>
-            <div class="text-plus__benefits-info">
-              партнеров импользуют Punchout технологию;
+          <div class="text-plus__benefits-wrapper">
+            <div class="text-plus__benefits-col">
+              <h4 class="text-plus__benefits-title">
+                35
+              </h4>
+              <div class="text-plus__benefits-info">
+                партнеров импользуют Punchout технологию;
+              </div>
             </div>
-          </div>
-          <div class="text-plus__benefits-col">
-            <h4 class="text-plus__benefits-title">
-              16
-            </h4>
-            <div class="text-plus__benefits-info">
-              партнеров пользуются OCI технологией
+            <div class="text-plus__benefits-col">
+              <h4 class="text-plus__benefits-title">
+                16
+              </h4>
+              <div class="text-plus__benefits-info">
+                партнеров пользуются OCI технологией
+              </div>
             </div>
           </div>
         </div>
@@ -713,10 +746,994 @@
         </div>
       </div>
     </div>
+    <div id="faq-popup" class="faq-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="faq-popup__inner default-popup-container">
+        <h2 class="faq-popup__title">
+          Часто задаваемые вопросы
+        </h2>
+        <div class="faq-popup__item">
+          <div class="faq-popup__item-num">
+            01
+          </div>
+          <div class="faq-popup__item-box">
+            <div class="faq-popup__item-head" data-popup="faq">
+              <h4 class="faq-popup__item-title">
+                Что такое турбокоманда? И какая у нее цель?
+              </h4>
+              <div class="faq-popup__item-toggler">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 24.001C0 10.7461 10.7452 0.000976562 24 0.000976562C37.2548 0.000976562 48 10.7461 48 24.001C48 37.2558 37.2548 48.001 24 48.001C10.7452 48.001 0 37.2558 0 24.001Z" fill="#F3F5F6" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25 17.001H23V23.001H17V25.001H23V31.001H25V25.001H31V23.001H25V17.001Z" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <p class="faq-popup__item-text">
+              Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.
+            </p>
+          </div>
+        </div>
+        <div class="faq-popup__item">
+          <div class="faq-popup__item-num">
+            02
+          </div>
+          <div class="faq-popup__item-box">
+            <div class="faq-popup__item-head" data-popup="faq">
+              <h4 class="faq-popup__item-title">
+                Что такое турбосообщество?
+              </h4>
+              <div class="faq-popup__item-toggler">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 24.001C0 10.7461 10.7452 0.000976562 24 0.000976562C37.2548 0.000976562 48 10.7461 48 24.001C48 37.2558 37.2548 48.001 24 48.001C10.7452 48.001 0 37.2558 0 24.001Z" fill="#F3F5F6" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25 17.001H23V23.001H17V25.001H23V31.001H25V25.001H31V23.001H25V17.001Z" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <p class="faq-popup__item-text">
+              Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.
+            </p>
+          </div>
+        </div>
+        <div class="faq-popup__item">
+          <div class="faq-popup__item-num">
+            03
+          </div>
+          <div class="faq-popup__item-box">
+            <div class="faq-popup__item-head" data-popup="faq">
+              <h4 class="faq-popup__item-title">
+                Как работает турбокоманда?
+              </h4>
+              <div class="faq-popup__item-toggler">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 24.001C0 10.7461 10.7452 0.000976562 24 0.000976562C37.2548 0.000976562 48 10.7461 48 24.001C48 37.2558 37.2548 48.001 24 48.001C10.7452 48.001 0 37.2558 0 24.001Z" fill="#F3F5F6" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25 17.001H23V23.001H17V25.001H23V31.001H25V25.001H31V23.001H25V17.001Z" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <p class="faq-popup__item-text">
+              Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.
+            </p>
+          </div>
+        </div>
+        <div class="faq-popup__item">
+          <div class="faq-popup__item-num">
+            04
+          </div>
+          <div class="faq-popup__item-box">
+            <div class="faq-popup__item-head" data-popup="faq">
+              <h4 class="faq-popup__item-title">
+                Кто входит в турбо-команду?
+              </h4>
+              <div class="faq-popup__item-toggler">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 24.001C0 10.7461 10.7452 0.000976562 24 0.000976562C37.2548 0.000976562 48 10.7461 48 24.001C48 37.2558 37.2548 48.001 24 48.001C10.7452 48.001 0 37.2558 0 24.001Z" fill="#F3F5F6" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25 17.001H23V23.001H17V25.001H23V31.001H25V25.001H31V23.001H25V17.001Z" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <p class="faq-popup__item-text">
+              Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.
+            </p>
+          </div>
+        </div>
+        <div class="faq-popup__item">
+          <div class="faq-popup__item-num">
+            05
+          </div>
+          <div class="faq-popup__item-box">
+            <div class="faq-popup__item-head" data-popup="faq">
+              <h4 class="faq-popup__item-title">
+                С чего мне начать изучение страницы?
+              </h4>
+              <div class="faq-popup__item-toggler">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 24.001C0 10.7461 10.7452 0.000976562 24 0.000976562C37.2548 0.000976562 48 10.7461 48 24.001C48 37.2558 37.2548 48.001 24 48.001C10.7452 48.001 0 37.2558 0 24.001Z" fill="#F3F5F6" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25 17.001H23V23.001H17V25.001H23V31.001H25V25.001H31V23.001H25V17.001Z" fill="black" />
+                </svg>
+              </div>
+            </div>
+            <p class="faq-popup__item-text">
+              Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="review-popup" class="review-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="review-popup__inner default-popup-container">
+        <div class="review-popup__head">
+          <div class="review-popup__head-image">
+            <img src="images/content/popup-review-image.jpg" alt="">
+          </div>
+          <div class="review-popup__head-info">
+            <div class="review-popup__head-name">
+              Чурсина Мария Юрьевна
+            </div>
+            <div class="review-popup__head-descr">
+              Торговый представитель по развитию
+            </div>
+            <div data-popup="rate" data-rateyo-rating="4" class="review-popup__head-rate">
+
+            </div>
+          </div>
+        </div>
+        <p class="review-popup__descr">
+          Целью моей учёбы было получение образования для саморазвития и получения новых знаний. Дистанционная форма обучения на мой взгляд очень удобна в плане совмещения с работой. Материалы для обучения были в свободном доступе, что легко позволило получить необходимую информацию для окончания учёбы. Система тестирования тоже порадовала тем, что можно было неограниченно проверять свои знания в любое время.
+        </p>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Плюсы
+          </h6>
+          <p class="review-popup__info-text">
+            Удержание лидирующей позиции в функциональной области среди российских конкурентов за счет:
+
+          </p>
+          <p class="review-popup__info-text marked">
+            Омниканальности и автоматизации процессов, которые дают возможность взаимодействия с
+            компаниями в различных форматах;
+
+          </p>
+          <p class="review-popup__info-text marked">
+            E-commerce платформы, которая позволяет дополнительно сократить временные и трудовые затраты
+            сотрудников, а значит и увеличить их эффективность.
+          </p>
+        </div>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Минусы:
+          </h6>
+          <p class="review-popup__info-text">
+            Продукт ТК «VIP ИМК» - платформа корпоративной онлайн закупки «ПКОЗ», направленная на поддержание и визуализацию процесса корпоративной закупки с соблюдением требований компании-партнера. Платформа ПКОЗ – это:
+          </p>
+          <p class="review-popup__info-text marked small">
+            Создание и поддержка структур компаний любой сложности;
+
+          </p>
+          <p class="review-popup__info-text marked small">
+            Гибкие индивидуальных настройки;
+
+          </p>
+          <p class="review-popup__info-text marked small">
+            Самостоятельное администрирование сервиса партнером;
+
+          </p>
+          <p class="review-popup__info-text marked small">
+            Отсутствие рекламных баннеров.
+          </p>
+        </div>
+      </div>
+      <div class="courses__item-count likes">
+        <img src="images/icons/likes.svg" alt="">
+        <span>347</span>
+      </div>
+    </div>
+    <div id="command-descr-popup" class="command-descr-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+      <div class="command-descr__inner default-popup-container">
+        <h2 class="command-descr__title">
+          Турбокоманда «Чекаут»
+        </h2>
+        <p class="command-descr__text review-popup__info-text">
+          Быстрое оформление заказа любым удобным способом для пользователя ИМК и мобильной версией.
+        </p>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Цели:
+          </h6>
+          <p class="review-popup__info-text">
+            Удержание лидирующей позиции в функциональной области среди российских конкурентов за счет:
+          </p>
+          <p class="review-popup__info-text marked">
+            Омниканальности и автоматизации процессов, которые дают возможность взаимодействия с
+            компаниями в различных форматах;
+          </p>
+          <p class="review-popup__info-text marked">
+
+            E-commerce платформы, которая позволяет дополнительно сократить временные и трудовые затраты
+            сотрудников, а значит и увеличить их эффективность.
+
+          </p>
+        </div>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Продукт:
+          </h6>
+          <p class="review-popup__info-text">
+            Продукт ТК «VIP ИМК» - платформа корпоративной онлайн закупки «ПКОЗ», направленная на поддержание и визуализацию процесса корпоративной закупки с соблюдением требований компании-партнера. Платформа ПКОЗ – это:
+          </p>
+          <p class="review-popup__info-text marked small">
+            Создание и поддержка структур компаний любой сложности;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Гибкие индивидуальных настройки;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Самостоятельное администрирование сервиса партнером;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Отсутствие рекламных баннеров.
+          </p>
+        </div>
+        <div class="command-descr__team">
+          <h6 class="command-descr__team-title head-title">
+            Состав команды:
+          </h6>
+          <div class="command-descr__team-inner">
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Добрынин Евгений
+                </h6>
+                <p class="command-descr__team-text">
+
+                  Аналитик-Методолог
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Овинникова Анастасия
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Технический специалист <br>
+                  по продуктам Atlassian
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Сердюков Илья
+
+
+                </h6>
+                <p class="command-descr__team-text">
+                  DevOps-инженер
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Иванчук Сергей
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Системный аналитик (эксперт)
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Шарифуллин Айдар
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Владелец продукта
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Клоков Андрей
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Бизнес технолог
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Семенов Игорь
+                </h6>
+                <p class="command-descr__team-text">
+                  Главный дизайнер
+
+                </p>
+              </div>
+            </div>
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Иванов Сергей
+                </h6>
+                <p class="command-descr__team-text">
+                  Владелец процесса
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Маревичев Павел
+                </h6>
+                <p class="command-descr__team-text">
+                  Дизайнер
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Нафиков Азат
+                </h6>
+                <p class="command-descr__team-text">
+                  Бизнес аналитик
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Борисов Владимир
+                </h6>
+                <p class="command-descr__team-text">
+                  DevOps-архитектор
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Махаев Евгений
+                </h6>
+                <p class="command-descr__team-text">
+                  Ведущий разработчик Hybris backend
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Воронченко Анастасия
+                </h6>
+                <p class="command-descr__team-text">
+                  Релиз-менеджер
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Телепов Алексей
+                </h6>
+                <p class="command-descr__team-text">
+                  Архитектор Hybris Backend (эксперт)
+                </p>
+              </div>
+            </div>
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-wrapper">
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Гончаров Денис
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Специалист по нагрузочному тестированию
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Карасёв Юрий
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Специалист по функциональному тестированию
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Стафьев Вячеслав
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Координатор турбо - команд
+                  </p>
+                </div>
+              </div>
+              <div class="command-descr__team-wrapper">
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Мельников Денис
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Системный администратор инфраструктуры
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Пелих Кирилл
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Архитектор Hybris Frontend (эксперт)
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Ряшенцев Вячеслав
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Администратор СУБД
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="command-popup" class="command-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+    </div>
+    <div id="table-popup" class="default-popup command-popup mfp-with-anim mfp-hide">
+      <div class="table-popup__inner default-popup-container">
+        <h2 class="table-popup__title">
+          Назначение сотрудника
+        </h2>
+        <div class="table-popup__head">
+          <div class="table-popup__head-item">
+            <div class="table-popup__head-itemName">
+              имя
+            </div>
+            <div class="table-popup__head-itemBox">
+              <div class="table-popup__head-itemInput">
+                <div class="table-popup__head-itemInput-name">имя инпута</div>
+                <input type="text" value="10.02.2021" />
+              </div>
+              <div class="table-popup__head-itemInput">
+                <div class="table-popup__head-itemInput-name">имя инпута</div>
+                <input type="text" value="10.02.2021" />
+              </div>
+            </div>
+          </div>
+          <div class="table-popup__head-item">
+            <div class="table-popup__head-itemName">
+              имя
+            </div>
+            <div class="table-popup__head-itemBox">
+              <div class="table-popup__head-itemInput">
+                <div class="table-popup__head-itemInput-name">имя инпута</div>
+                <input class="search" type="text" value="Имя" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-popup__slider">
+        <div class="table-popup__info">
+          <div class="table-popup__info-inner">
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name first">
+                ФИО
+              </div>
+              <div class="table-popup__info-descr">
+                Подразделение
+              </div>
+              <div class="table-popup__info-mail">
+                Email
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-popup__info">
+          <div class="table-popup__info-inner">
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name first">
+                ФИО
+              </div>
+              <div class="table-popup__info-descr">
+                Подразделение
+              </div>
+              <div class="table-popup__info-mail">
+                Email
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-popup__info">
+          <div class="table-popup__info-inner">
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name first">
+                ФИО
+              </div>
+              <div class="table-popup__info-descr">
+                Подразделение
+              </div>
+              <div class="table-popup__info-mail">
+                Email
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+            <div class="table-popup__info-line">
+              <div class="table-popup__info-name">
+                <div class="custom-checkbox"></div>
+                <a>Абидов Астемир Русланович</a>
+              </div>
+              <div class="table-popup__info-descr">
+                20063 Группа внедрения электронного обучения ОРиВДИ
+              </div>
+              <div class="table-popup__info-mail">
+                aar211@komus.net
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="table-popup__link blue-btn arrow">
+          Назначить
+          <div class="circle"></div>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/popups.js"></script>
 </body>
 
