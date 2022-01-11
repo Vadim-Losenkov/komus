@@ -605,6 +605,7 @@ body.unicorn .animation-block__sample{
 	}
 
 	.animation-block__topBackground {
+		display: none;
 		height: calc(100% + 70px);
 	}	
 	
@@ -613,7 +614,7 @@ body.unicorn .animation-block__sample{
 	}
 
 	#svg-animation-bottom {
-		top: -60px;
+		display: none;
 	}
 
 

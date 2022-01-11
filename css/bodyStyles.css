@@ -161,6 +161,7 @@ p {
     padding-bottom: 27px;
 }
 .header-line-wrapper {
+    column-gap: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1371,8 +1372,23 @@ body {
 .l-more2 {
     display: none;
 }
+.heder-bootom {
+    margin-top: 20px;
+}
 
 @media (max-width: 1150px) {
+    .categorySelection__block.categorySelection__block_right {
+        margin-right: -390px;
+        z-index: 100;
+    }
+    .categorySelection__block {
+        z-index: 100;
+        margin-left: -200px;
+    }
+    .red-btn.arrow {
+        left: 90px;
+    }
+
     .parent {
         column-gap: 15px;
     }
@@ -1406,7 +1422,32 @@ body {
     }
 }
 
+@media (max-width: 960px) {
+    .categorySelection__block.categorySelection__block_right {
+        margin-right: 0;
+        z-index: 100;
+    }
+    .categorySelection__block {
+        z-index: 100;
+        margin-left: 0;
+    }
+    .categorySelection__left .red-btn.arrow {
+        display: block;
+        transform: rotate(0deg) translateY(-50px);
+        display: flex;
+        align-items: center;
+        position: static;
+        z-index: 100;
+    }
+}
 @media (max-width: 768px) {
+    .header-line-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .h-line-item {
+        margin-bottom: 5px;
+    }
     .parent__inner {
         display: flex;
         flex-direction: column ;
@@ -1518,7 +1559,6 @@ body {
         line-height: 135%;
     }
 }
-
 @media screen and (max-width: 750px) {
     .mainMenu__userQuest {
         display: none;
@@ -1663,7 +1703,7 @@ body {
         max-width: 320px;
     }
     .categorySelection__block.categorySelection__block_right {
-        display: none;
+        /* display: none; */
     }
     .animation-block__slogan2 {
         display: none;
@@ -1735,8 +1775,11 @@ body {
         font-size: 24px;
         margin-bottom: 20px;
     }
+    .categorySelection__left .red-btn {
+        display: none;
+    }
     .categorySelection__right {
-        margin-top: 0;
+        /* margin-top: 0; */
     }
     .categorySelection__block {
         margin-top: 0;
@@ -2030,6 +2073,20 @@ body {
         top: calc(50% - 320px);
     }
 }
+
+@media (max-width: 400px) {
+    .categorySelection__title {
+        font-size: 28px;
+    }
+    .categorySelection__description {
+        font-size: 12px;
+    }
+    .categorySelection__button {
+        font-size: 14px;
+    }
+
+}
+
 .categorySelection__block2 img {
     animation-name: levitation2;
     animation-duration: 4s;
