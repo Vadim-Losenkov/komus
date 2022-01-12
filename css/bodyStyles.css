@@ -26,7 +26,6 @@ p {
   margin: 0;
 }
 
-
 .yellow-btn,
 .red-btn,
 .blue-btn {
@@ -248,10 +247,10 @@ p {
 }
 .academy__element:hover {
   background: linear-gradient(
-  90deg,
-  rgba(234, 253, 254, 1) 0%,
-  rgba(236, 244, 255, 1) 35%,
-  rgba(231, 233, 255, 1) 100%
+    90deg,
+    rgba(234, 253, 254, 1) 0%,
+    rgba(236, 244, 255, 1) 35%,
+    rgba(231, 233, 255, 1) 100%
   );
 }
 
@@ -408,9 +407,9 @@ p {
   gap: 29px 29px;
   grid-auto-flow: row;
   grid-template-areas:
-  "Item-1 Item-2 Item-2"
-  "Item-1 Item-3 Item-4"
-  "Item-5 Item-5 Item-4";
+    "Item-1 Item-2 Item-2"
+    "Item-1 Item-3 Item-4"
+    "Item-5 Item-5 Item-4";
 }
 
 .parent__inner:first-child {
@@ -564,7 +563,6 @@ p {
   margin: 0 10px;
 }
 
-
 .slick-dots {
   margin: 0;
   padding: 0;
@@ -577,7 +575,7 @@ p {
 .slick-dots li button {
   border: 0;
   padding: 0;
-  background-color: #2EC5CE;
+  background-color: #2ec5ce;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -587,9 +585,8 @@ p {
   width: 14px;
   height: 14px;
   background-color: #fff;
-  border: 3px solid #2EC5CE;
+  border: 3px solid #2ec5ce;
 }
-
 
 /* формируем кнопку закрытия */
 .close {
@@ -905,7 +902,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .help-title {
   text-align: center;
@@ -922,17 +919,16 @@ body {
   max-width: 600px;
   display: flex;
   align-items: center;
-  
 }
 .help-btn {
   padding: 14px 30px;
-  background-color: #FFAF38;
+  background-color: #ffaf38;
   border-radius: 42px;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   margin-bottom: 20px;
   margin: 0 15px;
@@ -983,7 +979,8 @@ body {
 .category-item-2 {
   transform: translateY(50px);
 }
-.category-item-3 {}
+.category-item-3 {
+}
 .category-item-4 {
   transform: translateX(50px) translateY(20px);
 }
@@ -1145,10 +1142,10 @@ body {
 }
 .course-item:hover {
   background: linear-gradient(
-  90deg,
-  rgba(234, 253, 254, 1) 0%,
-  rgba(236, 244, 255, 1) 35%,
-  rgba(231, 233, 255, 1) 100%
+    90deg,
+    rgba(234, 253, 254, 1) 0%,
+    rgba(236, 244, 255, 1) 35%,
+    rgba(231, 233, 255, 1) 100%
   );
 }
 .course-item {
@@ -1381,10 +1378,10 @@ body {
 }
 .lider-item:hover {
   background: linear-gradient(
-  90deg,
-  rgba(234, 253, 254, 1) 0%,
-  rgba(236, 244, 255, 1) 35%,
-  rgba(231, 233, 255, 1) 100%
+    90deg,
+    rgba(234, 253, 254, 1) 0%,
+    rgba(236, 244, 255, 1) 35%,
+    rgba(231, 233, 255, 1) 100%
   );
 }
 .pagination {
@@ -1434,10 +1431,10 @@ body {
 
 .parent .div:hover {
   background: linear-gradient(
-  90deg,
-  rgba(234, 253, 254, 1) 0%,
-  rgba(236, 244, 255, 1) 35%,
-  rgba(231, 233, 255, 1) 100%
+    90deg,
+    rgba(234, 253, 254, 1) 0%,
+    rgba(236, 244, 255, 1) 35%,
+    rgba(231, 233, 255, 1) 100%
   );
 }
 .name2 {
@@ -1451,6 +1448,66 @@ body {
 }
 .heder-bootom {
   margin-top: 20px;
+}
+
+.header__info {
+  max-width: 1300px;
+  margin: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__info-block {
+  margin-top: -300px;
+  max-width: 460px;
+  flex: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+.header__info-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 135%;
+  color: #a2e0bc;
+  text-align: center; 
+}
+.header__info-item {
+  max-width: 130px;
+  margin-bottom: 20px;
+}
+.header__info-item-2 {
+  transform: translateY(60px);
+}
+.header__info-item-4 {
+  transform: translateX(30px);
+}
+.header__info-item-5 {
+  transform: translateY(40px) translateX(30px);
+}
+.header__info-item-6 {
+  transform: translateY(20px) translateX(30px);
+}
+.header__info-image img {
+  width: 100%;
+}
+
+.idx-3 .header__info-image {
+  transform: translateY(-100px);
+}
+.idx-3 .header__info-block {
+  max-width: 601px;
 }
 
 @media (max-width: 1150px) {
@@ -1478,11 +1535,11 @@ body {
     grid-gap: 15px 15px;
     grid-template-rows: 335px 335px 270px 270px 270px;
     grid-template-areas:
-    "Item-1 Item-4"
-    "Item-1 Item-4"
-    "Item-2 Item-2"
-    "Item-5 Item-5"
-    "Item-3 Item-3";
+      "Item-1 Item-4"
+      "Item-1 Item-4"
+      "Item-2 Item-2"
+      "Item-5 Item-5"
+      "Item-3 Item-3";
     margin-top: 15px;
   }
   .academy__element.academy-item-5 {
@@ -1497,7 +1554,7 @@ body {
   .parent__aside {
     max-width: 220px;
   }
-  
+
   .card-wrapper {
     display: block;
   }
@@ -1516,6 +1573,40 @@ body {
 }
 
 @media (max-width: 960px) {
+  .idx-3 .header__info-image {
+    transform: translateY(20px);
+  }
+  .header__info-image {
+    order: -1;
+    max-width: 300px;
+  }
+  .header__info-block {
+    margin-top: 0;
+  }
+  .header__info {
+    padding: 0 10px;
+    flex-direction: column;
+    top: 50%;
+    column-gap: 35px;
+    justify-content: center;
+    max-width: 340px;
+  }
+  .header__info-item {
+    max-width: 80px;
+  }
+  .header__info-item-1,
+  .header__info-item-2,
+  .header__info-item-3,
+  .header__info-item-4,
+  .header__info-item-5,
+  .header__info-item-6 {
+    transform: translate(0);
+  }
+
+  .header__info-item img {
+    width: 100%;
+  }
+
   .categorySelection__block.categorySelection__block_right {
     margin-right: 0;
     z-index: 100;
@@ -1960,7 +2051,7 @@ body {
     width: 7px;
     height: 15px;
   }
-  
+
   .gloss__info-title {
     font-size: 24px;
     margin-bottom: 30px;
@@ -1989,7 +2080,6 @@ body {
   .div6 .div-wrap {
     margin-left: 100px;
   }
-
 
   .card-follow a img {
     max-width: 140px;
@@ -2254,7 +2344,6 @@ body {
   .categorySelection__button {
     font-size: 14px;
   }
-
 }
 
 .categorySelection__block2 img {
@@ -2281,7 +2370,8 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+}
 @media screen and (max-width: 1400px) {
   .popup {
     max-height: 800px;

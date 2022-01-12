@@ -630,7 +630,7 @@ a {
   margin-bottom: 5px;
 }
 
-.courses__item-count {
+.mfp-with-anim .courses__item-count {
   position: absolute;
   bottom: 20px;
   right: 20px;

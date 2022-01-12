@@ -24,7 +24,7 @@
 		background: linear-gradient(46.35deg, #15324B 30.14%, #18675E 72.1%);
 		position:relative;
 		width:100%;
-		height:95vh;
+		min-height:110vh;
 		justify-content:space-between;
 	}
 
