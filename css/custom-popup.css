@@ -779,10 +779,21 @@ a {
   color: #333333;
   margin-bottom: 3px;
 }
-.table-popup__head-itemInput input.search {
+.table-popup__head-itemInput.search {
+  position: relative;
+}
+.table-popup__head-itemInput.search input {
   width: 100%;
   max-width: 100%;
   display: block;
+  padding-right: 40px;
+}
+.table-popup__head-itemInput.search img {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  
+  transform: translateY(-3px);
 }
 .table-popup__head-item {
   max-width: 100%;
@@ -799,6 +810,14 @@ a {
   line-height: 135%;
   color: #000;
 }
+.table-popup__head-stick {
+  margin: 0 5px;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  border-radius: 1px;
+  margin-bottom: 15px;
+}
 .table-popup__head-itemBox {
   padding: 20px;
   background-color: #fafafa;
@@ -806,6 +825,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .table-popup__head-itemName {
   font-weight: 600;
@@ -814,10 +834,11 @@ a {
   color: #000000;
   margin-bottom: 7px;
 }
-
-
 .table-popup__info-title {
   
+}
+.table-popup__slider {
+  margin-bottom: 20px;
 }
 .table-popup__info-line {
   display: flex;
@@ -825,7 +846,6 @@ a {
 }
 .table-popup__info-line:nth-child(odd) {
   background-color: #fafafa;
-  
 }
 .table-popup__info-name,
 .table-popup__info-descr,
@@ -878,6 +898,29 @@ a {
 .table-popup__info {
   margin-bottom: 20px;
 }
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.slick-dots li button {
+  border: 0;
+  padding: 0;
+  background-color: #2EC5CE;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  font-size: 0;
+}
+.slick-dots li.slick-active button {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 3px solid #2EC5CE;
+}
 
 /* end table-popup */
 
@@ -885,6 +928,47 @@ a {
 @media (max-width: 1050px) {
   .marathon-popup .marathon__footer {
     margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .table-popup__head {
+    flex-direction: column;
+  }
+  .table-popup__head input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .table-popup__head-stick {
+    display: none;
+  }
+  .table-popup__head-item:last-child {
+    order: -1;
+    margin-bottom: 10px;
+  }
+  .table-popup__head-itemBox {
+    column-gap: 20px;
+  }
+  
+  .table-popup__info-line {
+    display: block;
+    padding: 20px 0;
+  }
+  .table-popup__info-line:first-child {
+    display: none;
+  }
+  .table-popup__info-line:nth-child(odd) {
+    background-color: #fff;
+  }
+  .table-popup__info-line:nth-child(even) {
+    background-color: #fafafa;
+  }
+  .table-popup__info-name,
+  .table-popup__info-descr,
+  .table-popup__info-mail {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 900px) {
@@ -1054,12 +1138,11 @@ a {
   }
 }
 @media (max-width: 500px) {
-  
   .default-popup {
     padding-top: 40px;
     padding-bottom: 50px;
   }
-  .marathon-popup .blue-btn,
+  .blue-btn,
   .marathon-popup .yellow-btn {
     font-size: 12px !important;
     height: 35px;
@@ -1072,12 +1155,12 @@ a {
     min-width: 150px !important;
     max-width: 200px !important;
   }
-  .marathon-popup .blue-btn.arrow .circle,
+  .blue-btn.arrow .circle,
   .marathon-popup .yellow-btn.arrow .circle {
     width: 25px;
     height: 25px;
   }
-  .marathon-popup .blue-btn.arrow .circle::after,
+  .blue-btn.arrow .circle::after,
   .marathon-popup .yellow-btn.arrow .circle::after {
     width: 7px;
     height: 15px;
@@ -1123,7 +1206,8 @@ a {
   }
   .command-descr__title,
   .playlist-popup__title,
-  .video-popup .playlist-popup__title {
+  .video-popup .playlist-popup__title,
+  .table-popup__title {
     font-size: 24px;
     text-align: center;
   }
@@ -1205,6 +1289,24 @@ a {
   .command-popup__item-link::before {
     height: 5px;
     width: 10px;
+  }
+  
+  .table-popup__head-itemBox {
+    display: block;
+  }
+  .table-popup__head-itemInput {
+    margin-bottom: 10px;
+  }
+  .table-popup__info-name a {
+    font-size: 14px;
+  }
+  .table-popup__info-descr,
+  .table-popup__info-mail {
+    font-size: 12px;
+  }
+  .table-popup__link {
+    max-width: 150px;
+    width: auto;
   }
 }
 

@@ -32,23 +32,6 @@ if ($wrapper) {
   })
 }
 
-/*
-$(function() {
-  $('.p').magnificPopup({
-    type: 'inline',
-    removalDelay: 500, //delay removal by X to allow out-animation
-    callbacks: {
-      beforeOpen: function () {
-        this.st.mainClass = this.st.el.attr('data-effect');
-      }
-    },
-    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-  })
-})
-*/
-
-// ПЕРЕНЕСТИ ВСЕ ЧТО ВЫШЕ В index.js 
-
 $('[href="#menuMore"]').on('click', (e) => e.preventDefault())
 
 class Tabson {
@@ -93,13 +76,14 @@ class Tabson {
 }
 new Tabson('.courses__inner')
 
-
-$(".reviews__item-rate").rateYo({
-  readOnly: true,
-  ratedFill: "#fda700",
-  normalFill: "#c4c4c4",
-  starWidth: "12px"
-})
+if ($(".reviews__item-rate").length) {
+  $(".reviews__item-rate").rateYo({
+    readOnly: true,
+    ratedFill: "#fda700",
+    normalFill: "#c4c4c4",
+    starWidth: "12px"
+  })
+}
 
 const $progressBar = $('[data-progress]')
 $progressBar.each(function (index) {
@@ -118,3 +102,8 @@ function progressBarColor(num) {
     return '#93E211'
   }
 }
+
+$('.reviews__slider').slick({
+  arrows: false,
+  dots: true
+})

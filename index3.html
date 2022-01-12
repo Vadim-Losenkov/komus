@@ -1,542 +1,1993 @@
 <!doctype html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8" >
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Документ без названия</title>
-    <link rel="stylesheet" href="/assets/frontend/fonts/ptrootui.css">
-    <link rel="stylesheet" href="/assets/frontend/fonts/roboto.css">
-	<link href="css/headStyles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <script src="js/svg.js/svg.min.js"></script>
-	<script src="js/jQuery-3.5.1/jquery-3.5.1.min.js"></script>
-    <script src="js/svg_animation_script.js"></script>
-    <script src="js/flyed_boxes_animation_script.js"></script>
-    <script src="js/menu.js"></script>
-    <link rel="stylesheet" href="css/bodyStyles.css">
-    
+  <title>Документ без названия</title>
+  <link rel="stylesheet" href="/assets/frontend/fonts/ptrootui.css">
+  <link rel="stylesheet" href="/assets/frontend/fonts/roboto.css">
+  <link href="css/headStyles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <script src="js/svg.js/svg.min.js"></script>
+  <script src="js/jQuery-3.5.1/jquery-3.5.1.min.js"></script>
+  <script src="js/svg_animation_script.js"></script>
+  <script src="js/flyed_boxes_animation_script.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/bodyStyles.css">
+  <link rel="stylesheet" href="css/course.css">
+  <link rel="stylesheet" href="css/marathon.css">
+  <link rel="stylesheet" href="css/listing.css">
+  <link rel="stylesheet" href="css/custom-popup.css">
+  
 </head>
 
 <body class="body">
 
 
-
-
 <div class="animation-block__wrapper">
 
-	<div class="animation-block__top">
-    	<div class="animation-block__topBackground">
+    <div class="animation-block__top">
+      <div class="animation-block__topBackground">
+      </div>
+
+      <div class="mainMenu__wrapper">
+
+        <a class="mobileMenuHamburger" href="/">
+          <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 30h30v-3.33H5V30Zm0-8.33h30v-3.34H5v3.34ZM5 10v3.33h30V10H5Z" fill="#fff" />
+          </svg>
+        </a>
+
+        <div class="mainMenu__logo">
+          <a class="mainMenuLogo__link" href="/">
+            <img class="mainMenuLogo__image" src="images/new-logo.png" alt="logo" title="logo" />
+          </a>
         </div>
-    	
-        <div class="mainMenu__wrapper">
-        	
-            <a class="mobileMenuHamburger" href="/">
-                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 30h30v-3.33H5V30Zm0-8.33h30v-3.34H5v3.34ZM5 10v3.33h30V10H5Z" fill="#fff"/></svg>
-            </a>           
-            
-            <div class="mainMenu__logo">
-            	<a class="mainMenuLogo__link" href="/">
-                	<img class="mainMenuLogo__image" src="images/logo_optimized.svg" alt="logo" title="logo" />
-                </a>
-            </div>
-            
-            <div class="mainMenu__content">
-            	<!-- -->
-                <a class="mobileMenuCloseBtn">
-                	<svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M28 2.82 25.18 0 14 11.18 2.82 0 0 2.82 11.18 14 0 25.18 2.82 28 14 16.82 25.18 28 28 25.18 16.82 14 28 2.82Z" fill="#fff"/>
-                    </svg>
-                </a>
-            	
-                 
-            	<ul class="mainMenu__items">
-                	<li class="mainMenu__item">
-                    	<a class="mainMenu__link" href="">
-                        	<img class="mainMenu__image" src="images/search-icon.svg" />
-                            <span class="mainMenu__subj">Поиск</span>
-                        </a>
-                    </li>
-                	<li class="mainMenu__item">
-                    	<a class="mainMenu__link" href="">
-                        	<img class="mainMenu__image" src="images/help-icon.svg" />
-                            <span class="mainMenu__subj">Помощь</span>
-                        </a>
-                    </li>
-                	<li class="mainMenu__item">
-                    	<a class="mainMenu__link" href="">
-                        	<img class="mainMenu__image" src="images/calendar-icon.svg" />
-                            <span class="mainMenu__subj">Календарь</span>
-                        </a>
-                    </li>
-                	<li class="mainMenu__item">
-                    	<a class="mainMenu__link" href="">
-                        	<img class="mainMenu__image" src="images/glossariy-icon.svg" />
-                            <span class="mainMenu__subj">Глоссарий</span>
-                        </a>
-                    </li> 
-                	<li class="mainMenu__item">
-                    	<a class="mainMenu__link" id="subMenuActivator" href="#menuMore">
-                            <span class="mainMenu__subj">Еще...</span>
-                        </a>
-                        <div class="subMenu__wrapper" id="menuMore">
-                        	<ul class="subMenu__items">
-                            	
-                                <li class="subMenu__item">
-                                    <a class="subMenu__link" href="#">
-                                        <img class="subMenu__image" src="images/glossariy-icon-gray.svg" />
-                                        <span class="subMenu__subj">Поиск</span>
-                                    </a>
-                                </li>
 
-                                <li class="subMenu__item">
-                                    <a class="subMenu__link" href="#">
-                                        <img class="subMenu__image" src="images/glossariy-icon-gray.svg" />
-                                        <span class="subMenu__subj">Поиск</span>
-                                    </a>
-                                </li>
-                                
-                                <li class="subMenu__item">
-                                    <a class="subMenu__link" href="#">
-                                        <img class="subMenu__image" src="images/glossariy-icon-gray.svg" />
-                                        <span class="subMenu__subj">Поиск</span>
-                                    </a>
-                                </li>                                
+        <div class="mainMenu__content">
+          <!-- -->
+          <a class="mobileMenuCloseBtn">
+            <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28 2.82 25.18 0 14 11.18 2.82 0 0 2.82 11.18 14 0 25.18 2.82 28 14 16.82 25.18 28 28 25.18 16.82 14 28 2.82Z"
+                fill="#fff" />
+            </svg>
+          </a>
 
-                            </ul>
-                        </div>
-                    </li>                                                                         
-                </ul>
-            </div>
-            
-            
-            <div class="mainMenu__userbar">
-            	<div class="mainMenu__userContainer">
-                	<a href="" class="mainMenu__userLink">
-                        <div class="mainMenu__userQuest"> Задать вопрос </div>
-                    	<img src="images/user.png" alt="" title="" />
-                        <div class="mainMenu__userName"> Михаил </div>
+
+          <ul class="mainMenu__items">
+            <li class="mainMenu__item">
+              <a class="mainMenu__link" href="">
+                <img class="mainMenu__image" src="images/search-icon.svg" />
+                <span class="mainMenu__subj">Поиск</span>
+              </a>
+            </li>
+            <li class="mainMenu__item">
+              <a class="mainMenu__link" href="">
+                <img class="mainMenu__image" src="images/help-icon.svg" />
+                <span class="mainMenu__subj">Помощь</span>
+              </a>
+            </li>
+            <li class="mainMenu__item">
+              <a class="mainMenu__link" href="">
+                <img class="mainMenu__image" src="images/calendar-icon.svg" />
+                <span class="mainMenu__subj">Календарь</span>
+              </a>
+            </li>
+            <li class="mainMenu__item">
+              <a class="mainMenu__link" href="">
+                <img class="mainMenu__image" src="images/glossariy-icon.svg" />
+                <span class="mainMenu__subj">Глоссарий</span>
+              </a>
+            </li>
+            <li class="mainMenu__item">
+              <a class="mainMenu__link" id="subMenuActivator" href="#menuMore">
+                <span class="mainMenu__subj">Еще...</span>
+              </a>
+              <div class="subMenu__wrapper" id="menuMore">
+                <ul class="subMenu__items">
+
+                  <li class="subMenu__item">
+                    <a class="subMenu__link" href="#">
+                      <img class="subMenu__image" src="images/glossariy-icon-gray.svg" />
+                      <span class="subMenu__subj">Поиск</span>
                     </a>
-                </div>
-            </div>
+                  </li>
+
+                  <li class="subMenu__item">
+                    <a class="subMenu__link" href="#">
+                      <img class="subMenu__image" src="images/glossariy-icon-gray.svg" />
+                      <span class="subMenu__subj">Поиск</span>
+                    </a>
+                  </li>
+
+                  <li class="subMenu__item">
+                    <a class="subMenu__link" href="#">
+                      <img class="subMenu__image" src="images/glossariy-icon-gray.svg" />
+                      <span class="subMenu__subj">Поиск</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-    
-    	<div class="categorySelection__wrapper categorySelection__wrapper2">
-        	
-            <div class="categorySelection__left categorySelection__left2">
-            	<div class="categorySelection__block categorySelection__block_right">
-                <div class="category-item"><img src="./images/Frame.png" alt=""></div>
-                <div class="category-item2"><img src="./images/Frame2.png" alt=""></div>
-                <div class="category-item3"><img src="./images/Frame3.png" alt=""></div>
-                <div class="category-item4"><img src="./images/Frame4.png" alt=""></div>
-                <div class="category-item5"><img src="./images/Frame5.png" alt=""></div>
-                <div class="category-item6"><img src="./images/Frame6.png" alt=""></div>
-                </div>
+
+
+        <div class="mainMenu__userbar">
+          <div class="mainMenu__userContainer">
+            <a href="" class="mainMenu__userLink">
+              <div class="mainMenu__userQuest">
+                Задать вопрос
+              </div>
+              <img src="images/user.png" alt="" title="" />
+              <div class="mainMenu__userName">
+                Михаил
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="categorySelection__wrapper">
+
+        <div class="categorySelection__left">
+          <a href="#" class="red-btn arrow">
+            ценности agile
+            <div class="circle"></div>
+          </a>
+          <div class="categorySelection__block categorySelection__block_right">
+            <div class="categorySelection__title">
+              Цифрокоманда
             </div>
-            
-            
-            
-            <div class="categorySelection__right categorySelection__right2">
-            	<div class="categorySelection__block categorySelection__block2 categorySelection__block3">
-                	<img src="./images/people3.png" alt="people">
-                </div>    
-                <div class="categ-items"><img src="./images/Group 359.png" alt=""></div>        
+            <div class="categorySelection__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit
             </div>
-            
-    	</div>
-    
+            <div>
+              <a class="categorySelection__button" href="index2.html">Получить знания</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="categorySelection__center">
+          <div class="centerAnimation__wrapper">
+            <!---->
+            <img class="centerAnimation__man" src="images/man_alone.svg" alt="superhero" title="superhero" />
+            <div class="centerAnimation__galo"></div>
+            <div class="centerAnimation__shadow"></div>
+          </div>
+        </div>
+
+        <div class="categorySelection__right">
+          <div class="categorySelection__block">
+            <div class="categorySelection__title">
+              Турбокоманда
+            </div>
+            <div class="categorySelection__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit
+            </div>
+            <div>
+              <a class="categorySelection__button categorySelection__button_red" href="index3.html">Получить знания</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="animation-block__slogan animation-block__slogan2 animation-block__slogan3">
-    	<img class="animation-block__sloganImage" src="./images/bgtext2.svg" alt="" title="" />
+    <div class="animation-block__slogan">
+      <img class="animation-block__sloganImage" src="images/who_are_you_1.svg" alt="" title="" />
     </div>
-    
+
     <div class="animation-block__bottom">
-		<svg id="svg-animation-bottom" width="1602" height="253" viewBox="20 0 1602 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1591 202.75V68.7484C1531 60.7489 1418 54.7489 1418 54.7489L1303 68.7484C1303 68.7484 262.229 88.4165 5 88.4165V202.75H1591Z" fill="white"/>
-            <path id="fill_box_0" class="fill_box"  d="M168.001 66.7489H250.001V148.749H168.001V66.7489Z" fill="white"/>
-            <path id="fill_box_1" class="fill_box"  d="M101.001 48.7489H183.001V130.749H101.001V48.7489Z" fill="white"/>
-            <path id="fill_box_2" class="fill_box"  d="M271.001 53.7489H353.001V135.749H271.001V53.7489Z" fill="white"/>
-            <path id="fill_box_3" class="fill_box"  d="M217 77H299V159H217V77Z" fill="white"/>
-            <path id="fill_box_4" class="fill_box"  d="M434 27.749H516V109.749H434V27.749Z" fill="white"/>
-            <path id="fill_box_5" class="fill_box"  d="M379.089 48.749H461.089V130.749H379.089V48.749Z" fill="white"/>
-            <path id="fill_box_6" class="fill_box"  d="M489.001 48.7489H571.001V130.749H489.001V48.7489Z" fill="white"/>
-            <path id="fill_box_7" class="fill_box"  d="M547 19.5199H629V101.52H547V19.5199Z" fill="white"/>
-            <path id="fill_box_8" class="fill_box"  d="M609.001 12.749H691.001V94.7489H609.001V12.749Z" fill="white"/>
-            <path id="fill_box_9" class="fill_box"  d="M652.001 35.749H734.001V117.749H652.001V35.749Z" fill="white"/>
-            <path id="fill_box_10" class="fill_box"  d="M716.001 48.7489H798.001V130.749H716.001V48.7489Z" fill="white"/>
-            <path id="fill_box_11" class="fill_box"  d="M762.001 35.749H844.001V117.749H762.001V35.749Z" fill="white"/>
-            <path id="fill_box_12" class="fill_box"  d="M830.001 54.7489H912.001V136.749H830.001V54.7489Z" fill="white"/>
-            <path id="fill_box_13" class="fill_box"  d="M885.001 35.749H967.001V117.749H885.001V35.749Z" fill="white"/>
-            <path id="fill_box_14" class="fill_box"  d="M953.001 54.7489H1035V136.749H953.001V54.7489Z" fill="white"/>
-            <path id="fill_box_15" class="fill_box"  d="M329.001 60.7489H411.001V142.749H329.001V60.7489Z" fill="white"/>
-            <path id="fill_box_16" class="fill_box"  d="M1008 35.749H1090V117.749H1008V35.749Z" fill="white"/>
-            <path id="fill_box_17" class="fill_box"  d="M1056 48.7489H1138V130.749H1056V48.7489Z" fill="white"/>
-            <path id="fill_box_18" class="fill_box"  d="M1107 60.7489H1189V142.749H1107V60.7489Z" fill="white"/>
-            <path id="fill_box_19" class="fill_box"  d="M1157 41.7489H1239V123.749H1157V41.7489Z" fill="white"/>
-            <path id="fill_box_20" class="fill_box"  d="M1209 54.7489H1291V136.749H1209V54.7489Z" fill="white"/>
-            <path id="fill_box_21" class="fill_box"  d="M1272 27.749H1354V109.749H1272V27.749Z" fill="white"/>
-            <path id="fill_box_22" class="fill_box"  d="M1316 41.7489H1398V123.749H1316V41.7489Z" fill="white"/>
-            <path id="fill_box_23" class="fill_box"  d="M1367 19.5199H1449V101.52H1367V19.5199Z" fill="white"/>
-            <path id="fill_box_24" class="fill_box"  d="M1424 0H1506V81.9999H1424V0Z" fill="white"/>
-            <path id="fill_box_25" class="fill_box"  d="M1474 27.749H1556C1556 27.749 1556 52.7375 1556 68.7489C1556 84.7604 1556 109.749 1556 109.749H1474V27.749Z" fill="white"/>
-            <path id="fill_box_26" class="fill_box"  d="M51.0009 81.9999H133.001V174.251H51.0009V81.9999Z" fill="white"/>
-            <path id="fill_box_27" class="fill_box"  d="M1520 35.749H1602V76.7489V117.749H1520V35.749Z" fill="white"/>
-            <path id="fill_box_28" class="fill_box"  d="M0 71.7491H82V164H0V71.7491Z" fill="white"/>
-        </svg>
-        
-    </div>
-</div>
-<div class="heder-bootom">
-    <div class="container">
-        <div class="header-line-wrapper">
-            <div class="h-line-item">
-                <img src="./images/block.png" alt="block">
-                <p>Конкурс «Лучший кейс» - итоги голосования!</p>
-            </div>
-            <div class="h-line-item">
-                <img src="./images/block.png" alt="block">
-                <p>Марафон Открытых вебинаров, Часть 2</p>
-            </div>
-            <div class="h-line-item h-line-item2">
-                <img src="./images/block.png" alt="block">
-                <p>Представляем Марафон Открытых вебинаров!</p>
-            </div>
+      <svg id="svg-animation-bottom" width="1602" height="253" viewBox="20 0 1602 203" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1591 202.75V68.7484C1531 60.7489 1418 54.7489 1418 54.7489L1303 68.7484C1303 68.7484 262.229 88.4165 5 88.4165V202.75H1591Z"
+          fill="white" />
+        <path id="fill_box_0" class="fill_box" d="M168.001 66.7489H250.001V148.749H168.001V66.7489Z" fill="white" />
+        <path id="fill_box_1" class="fill_box" d="M101.001 48.7489H183.001V130.749H101.001V48.7489Z" fill="white" />
+        <path id="fill_box_2" class="fill_box" d="M271.001 53.7489H353.001V135.749H271.001V53.7489Z" fill="white" />
+        <path id="fill_box_3" class="fill_box" d="M217 77H299V159H217V77Z" fill="white" />
+        <path id="fill_box_4" class="fill_box" d="M434 27.749H516V109.749H434V27.749Z" fill="white" />
+        <path id="fill_box_5" class="fill_box" d="M379.089 48.749H461.089V130.749H379.089V48.749Z" fill="white" />
+        <path id="fill_box_6" class="fill_box" d="M489.001 48.7489H571.001V130.749H489.001V48.7489Z" fill="white" />
+        <path id="fill_box_7" class="fill_box" d="M547 19.5199H629V101.52H547V19.5199Z" fill="white" />
+        <path id="fill_box_8" class="fill_box" d="M609.001 12.749H691.001V94.7489H609.001V12.749Z" fill="white" />
+        <path id="fill_box_9" class="fill_box" d="M652.001 35.749H734.001V117.749H652.001V35.749Z" fill="white" />
+        <path id="fill_box_10" class="fill_box" d="M716.001 48.7489H798.001V130.749H716.001V48.7489Z" fill="white" />
+        <path id="fill_box_11" class="fill_box" d="M762.001 35.749H844.001V117.749H762.001V35.749Z" fill="white" />
+        <path id="fill_box_12" class="fill_box" d="M830.001 54.7489H912.001V136.749H830.001V54.7489Z" fill="white" />
+        <path id="fill_box_13" class="fill_box" d="M885.001 35.749H967.001V117.749H885.001V35.749Z" fill="white" />
+        <path id="fill_box_14" class="fill_box" d="M953.001 54.7489H1035V136.749H953.001V54.7489Z" fill="white" />
+        <path id="fill_box_15" class="fill_box" d="M329.001 60.7489H411.001V142.749H329.001V60.7489Z" fill="white" />
+        <path id="fill_box_16" class="fill_box" d="M1008 35.749H1090V117.749H1008V35.749Z" fill="white" />
+        <path id="fill_box_17" class="fill_box" d="M1056 48.7489H1138V130.749H1056V48.7489Z" fill="white" />
+        <path id="fill_box_18" class="fill_box" d="M1107 60.7489H1189V142.749H1107V60.7489Z" fill="white" />
+        <path id="fill_box_19" class="fill_box" d="M1157 41.7489H1239V123.749H1157V41.7489Z" fill="white" />
+        <path id="fill_box_20" class="fill_box" d="M1209 54.7489H1291V136.749H1209V54.7489Z" fill="white" />
+        <path id="fill_box_21" class="fill_box" d="M1272 27.749H1354V109.749H1272V27.749Z" fill="white" />
+        <path id="fill_box_22" class="fill_box" d="M1316 41.7489H1398V123.749H1316V41.7489Z" fill="white" />
+        <path id="fill_box_23" class="fill_box" d="M1367 19.5199H1449V101.52H1367V19.5199Z" fill="white" />
+        <path id="fill_box_24" class="fill_box" d="M1424 0H1506V81.9999H1424V0Z" fill="white" />
+        <path id="fill_box_25" class="fill_box"
+          d="M1474 27.749H1556C1556 27.749 1556 52.7375 1556 68.7489C1556 84.7604 1556 109.749 1556 109.749H1474V27.749Z"
+          fill="white" />
+        <path id="fill_box_26" class="fill_box" d="M51.0009 81.9999H133.001V174.251H51.0009V81.9999Z" fill="white" />
+        <path id="fill_box_27" class="fill_box" d="M1520 35.749H1602V76.7489V117.749H1520V35.749Z" fill="white" />
+        <path id="fill_box_28" class="fill_box" d="M0 71.7491H82V164H0V71.7491Z" fill="white" />
+      </svg>
 
-        </div>
     </div>
-</div>
-<div class="card">
+  </div>
+  <div class="heder-bootom">
     <div class="container">
-        <div class="card-wrapper">
-            <div class="card-item card-item1">
-                <div class="card-date"><div><span>12</span> декабря </div><div class="hidden-date">события</div></div>
-                <div class="card-name">Название мероприятия</div>
-                <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit </div>
-                <div class="card-btns">
-                    <div class="card-follow"><a href="#"><img src="./images/foolow.png" alt="foloow"></a></div>
-                    <div class="card-all"><a href="#">Все события</a></div>
-                </div>
-            </div>
-            <div class="card-item card-item2">
-                <div class="left-block">
-                    <div class="left-blocktext"><p>мой прогресс</p><span>87%</span></div>
-                </div>
-                <div class="right-block">
-                    <div class="right-block-text">Проходи курсы для достижения великих результатов</div>
-                    <div class="right-block-btn"><a href="#"><img src="./images/btn2.png" alt="btn"></a></div>
-                </div>
-            </div>
+      <div class="header-line-wrapper">
+        <div class="h-line-item">
+          <img src="./images/block.png" alt="block">
+          <p>
+            Конкурс «Лучший кейс» - итоги голосования!
+          </p>
         </div>
+        <div class="h-line-item">
+          <img src="./images/block.png" alt="block">
+          <p>
+            Марафон Открытых вебинаров, Часть 2
+          </p>
+        </div>
+        <div class="h-line-item">
+          <img src="./images/block.png" alt="block">
+          <p>
+            Представляем Марафон Открытых вебинаров!
+          </p>
+        </div>
+
+      </div>
     </div>
-</div>
-<div class="liders">
+  </div>
+
+  
+  <div class="card">
     <div class="container">
-        <div class="lider-title">Лидеры турбокоманд</div>
-        <div class="lider-wrapper">
-            <div class="lider-item">
-                <div class="lider-img"><img src="./images/woman-slide.png" class="img1" alt="mans">
-                    <img src="./images/img2.png" class="img2" alt="mans">
-                <div class="name2">Чурсина <br>
-                    Мария <br>
-                    Юрьевна </div></div>
-                <div class="lider-info">
-                    <div class="l-info-name">Чурсина    <br>
-                        Мария Юрьевна </div>
-                        <div class="l-info-prof">Торговый представитель по развитию</div>
-                        <div class="l-more"><a href="#win1" class="button button-green">Подробнее→</a></div>
-                </div>
-                <div class="lider-info-m">Торговый представитель по развитию</div>
-                <div class="l-more2"><a href="#win1" class="button button-green">Подробнее→</a></div>
+      <div class="card-wrapper">
+        <div class="card-item card-item1">
+          <div class="card-date">
+            <div>
+              <span>12</span> декабря
             </div>
-            <div class="lider-item">
-                <div class="lider-img"><img src="./images/woman-slide.png" class="img1" alt="mans">
-                    <img src="./images/img2.png" class="img2" alt="mans">
-                    <div class="name2">Чурсина <br>
-                        Мария <br>
-                        Юрьевна </div></div>
-                <div class="lider-info">
-                    <div class="l-info-name">Чурсина    <br>
-                        Мария Юрьевна </div>
-                        <div class="l-info-prof">Торговый представитель по развитию</div>
-                        <div class="l-more"><a href="#">Подробнее→</a></div>
-                </div>
-                <div class="lider-info-m">Торговый представитель по развитию</div>
-                <div class="l-more2"><a href="#win1" class="button button-green">Подробнее→</a></div>
+            <div class="hidden-date">
+              события
             </div>
-            <div class="lider-item">
-                <div class="lider-img"><img src="./images/woman-slide.png" class="img1" alt="mans">
-                    <img src="./images/img2.png" class="img2" alt="mans">
-                    <div class="name2">Чурсина <br>
-                        Мария <br>
-                        Юрьевна </div></div>
-                <div class="lider-info">
-                    <div class="l-info-name">Чурсина    <br>
-                        Мария Юрьевна </div>
-                        <div class="l-info-prof">Торговый представитель по развитию</div>
-                        <div class="l-more"><a href="#">Подробнее→</a></div>
-                </div>
-                <div class="lider-info-m">Торговый представитель по развитию</div>
-                <div class="l-more2"><a href="#win1" class="button button-green">Подробнее→</a></div>
+          </div>
+          <div class="card-name">
+            Название мероприятия
+          </div>
+          <div class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit
+          </div>
+          <div class="card-btns">
+            <div class="card-follow">
+              <a href="#" class="yellow-btn arrow">Записаться <div class="circle"></div>
+              </a>
             </div>
-            <div class="lider-item">
-                <div class="lider-img"><img src="./images/woman-slide.png" class="img1" alt="mans">
-                    <img src="./images/img2.png" class="img2" alt="mans">
-                    <div class="name2">Чурсина <br>
-                        Мария <br>
-                        Юрьевна </div></div>
-                <div class="lider-info">
-                    <div class="l-info-name">Чурсина    <br>
-                        Мария Юрьевна </div>
-                        <div class="l-info-prof">Торговый представитель по развитию</div>
-                        <div class="l-more"><a href="#">Подробнее→</a></div>
-                </div>
-                <div class="lider-info-m">Торговый представитель по развитию</div>
-                <div class="l-more2"><a href="#win1" class="button button-green">Подробнее→</a></div>
+            <div class="card-all">
+              <a href="#">Все события</a>
             </div>
-            <div class="lider-item">
-                <div class="lider-img"><img src="./images/woman-slide.png" class="img1" alt="mans">
-                    <img src="./images/img2.png" class="img2" alt="mans">
-                    <div class="name2">Чурсина <br>
-                        Мария <br>
-                        Юрьевна </div></div>
-                <div class="lider-info">
-                    <div class="l-info-name">Чурсина    <br>
-                        Мария Юрьевна </div>
-                        <div class="l-info-prof">Торговый представитель по развитию</div>
-                        <div class="l-more"><a href="#">Подробнее→</a></div>
-                </div>
-                <div class="lider-info-m">Торговый представитель по развитию</div>
-                <div class="l-more2"><a href="#win1" class="button button-green">Подробнее→</a></div>
-            </div>
-            <div class="lider-item">
-                <div class="lider-img"><img src="./images/woman-slide.png" class="img1" alt="mans">
-                    <img src="./images/img2.png" class="img2" alt="mans">
-                    <div class="name2">Чурсина <br>
-                        Мария <br>
-                        Юрьевна </div></div>
-                <div class="lider-info">
-                    <div class="l-info-name">Чурсина    <br>
-                        Мария Юрьевна </div>
-                        <div class="l-info-prof">Торговый представитель по развитию</div>
-                        <div class="l-more"><a href="#">Подробнее→</a></div>
-                </div>
-                <div class="lider-info-m">Торговый представитель по развитию</div>
-                <div class="l-more2"><a href="#win1" class="button button-green">Подробнее→</a></div>
-            </div>
+          </div>
         </div>
-        <!-- <div class="pagination">
-            <a href="#"><img src="./images/Пагинатор.svg" alt="pag"></a>
-        </div> -->
-        <div class="lider-btn">
-            <a href="#"><img src="./images/comand.svg" alt="comand"></a>
+        <div class="card-item card-item2">
+          <div class="left-block">
+            <div class="left-blocktext">
+              <p>
+                мой прогресс
+              </p>
+              <span>87%</span>
+            </div>
+          </div>
+          <div class="right-block">
+            <div class="right-block-text">
+              Проходи курсы для достижения великих результатов
+            </div>
+            <div class="right-block-btn">
+              <a href="#" class="blue-btn arrow">Вперед! <span class="circle"></span></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="course">
+  </div>
+  <div class="reviews idx-3">
     <div class="container">
-        <div class="course-title">Курсы</div>
-        <div class="course-wrapper">
-            <div class="course-item">
-                <div class="course-progress"><img src="./images/progress.png" alt="progress"></div>
-                <div class="course-block">
-                    <div class="course-new">Новому сотруднику</div>
-                    <div class="course-item__title">Не следует, однако забывать</div>
-                    <div class="courser-item__text">что начало повседневной работы по формированию позиции позволяет...</div>
-                    <div class="course-feed">
-                        <div class="c-feed-watch"><a href="#">Смотреть курс...</a></div>
-                        <div class="c-feed-back"><a href="#"><img src="./images/Group 33.svg" alt=""></a></div>
-                    </div>
+      <div class="reviews__inner">
+        <h2 class="reviews__title">
+          Лидеры турбокоманд
+        </h2>
+        <div class="reviews__slider">
+          <div class="reviews__items">
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
                 </div>
-            </div>
-            <div class="course-item">
-                <div class="course-progress"><img src="./images/progress.png" alt="progress"></div>
-                <div class="course-block">
-                    <div class="course-new">Новому сотруднику</div>
-                    <div class="course-item__title">Не следует, однако забывать</div>
-                    <div class="courser-item__text">что начало повседневной работы по формированию позиции позволяет...</div>
-                    <div class="course-feed">
-                        <div class="c-feed-watch"><a href="#">Смотреть курс...</a></div>
-                        <div class="c-feed-back"><a href="#"><img src="./images/Group 33.svg" alt=""></a></div>
-                    </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
                 </div>
+              </div>
             </div>
-            <div class="course-item course-itembg">
-                <div class="course-progress"><img src="./images/progress.png" alt="progress"></div>
-                <div class="course-block">
-                    <div class="course-new">Новому сотруднику</div>
-                    <div class="course-item__title">Не следует, однако забывать</div>
-                    <div class="courser-item__text">что начало повседневной работы по формированию позиции позволяет...</div>
-                    <div class="course-feed">
-                        <div class="c-feed-watch"><a href="#">Смотреть курс...</a></div>
-                        <div class="c-feed-back"><a href="#"><img src="./images/Group 33.svg" alt=""></a></div>
-                    </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
                 </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
             </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__items">
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__items">
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <div class="reviews__item-image">
+                <img src="images/review-avatar.jpg" alt="">
+              </div>
+              <div class="reviews__item-info">
+                <div class="reviews__item-head">
+                  <div class="reviews__item-image">
+                    <img src="images/review-avatar.jpg" alt="">
+                  </div>
+                  <div class="reviews__item-headbox">
+                    <h6 class="reviews__item-name">
+                      Чурсина Мария Юрьевна
+                    </h6>
+                    <div id="rateYo" data-rateyo-rating="3" class="reviews__item-rate"></div>
+                  </div>
+                </div>
+                <p class="reviews__item-text">
+                  Курс даст информацию о преимуществах работы в Компании, ее истории.
+                </p>
+                <a href="#command-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
+                  Подробнее
+                </a>
+                <div class="reviews__item-count">
+                  <img src="images/icons/likes.svg" alt="">
+                  <span>340</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="course-btn"><a href="#"><img src="./images/more.png" alt="more"></a></div>
+        <div class="reviews__item-add--mobile">
+            <a href="#command-popup" data-effect="mfp-zoom-in" class="popup-opener">
+              Турбокоманды
+              <div class="circle"></div>
+            </a>
+          </div>
+      </div>
     </div>
-</div>
-<div class="academy">
+  </div>
+  <div class="courses">
     <div class="container">
-        <div class="academy-title">Академия цифры</div>
-        <div class="parent">
-        <div class="div div1">
-            
-           <div class="div-wrap">
-            <div class="dtitle">Понедельник, 12 мая</div>
-            <div class="dbold dbold2">Не следует, однако забывать</div>
-            <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-            <div class="dread"><a href="#">Читать дальше...</a></div>
+      <div class="courses__inner">
+        <div class="courses__head">
+          <h2 class="courses__title">
+            Рекомендованные курсы
+          </h2>
         </div>
+        <div class="courses__items open">
+          <div class="courses__item">
+            <div class="courses__item-progress">
+              <div class="courses__item-progressText">
+                Пройден на 40%
+              </div>
+              <div class="courses__item-progressBar">
+                <div class="progress-bar-length" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="courses__item-inner">
+              <div class="courses__item-image">
+                <img src="images/courses.png" alt="">
+                <img class="courses__item-image--mobile" src="images/mobile-courses.png" alt="">
+              </div>
+              <div class="courses__item-box">
+                <p class="courses__item-personal">
+                  Новому сотруднику
+                </p>
+                <h6 class="courses__item-title">
+                  Не следует, однако забывать
+                </h6>
+              </div>
+            </div>
+            <div class="courses__item-info">
+              <p class="courses__item-descr">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <div class="courses__item-footer">
+                <a href="#" class="courses__item-link">Смотреть курс...</a>
+                <div class="courses__item-counter">
+                  <div class="courses__item-count likes">
+                    <img src="images/icons/likes.svg" alt="">
+                    <span>3467</span>
+                  </div>
+                  <div class="courses__item-count comments">
+                    <img src="images/icons/comments.svg" alt="">
+                    <span>17</span>
+                  </div>
+                  <div class="courses__item-count time">
+                    <img src="images/icons/time.svg" alt="">
+                    <span>34мин</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="courses__item">
+            <div class="courses__item-progress">
+              <div class="courses__item-progressText">
+                Пройден на 40%
+              </div>
+              <div class="courses__item-progressBar">
+                <div class="progress-bar-length" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="courses__item-inner">
+              <div class="courses__item-image">
+                <img src="images/courses.png" alt="">
+                <img class="courses__item-image--mobile" src="images/mobile-courses.png" alt="">
+              </div>
+              <div class="courses__item-box">
+                <p class="courses__item-personal">
+                  Новому сотруднику
+                </p>
+                <h6 class="courses__item-title">
+                  Не следует, однако забывать
+                </h6>
+              </div>
+            </div>
+            <div class="courses__item-info">
+              <p class="courses__item-descr">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <div class="courses__item-footer">
+                <a href="#" class="courses__item-link">Смотреть курс...</a>
+                <div class="courses__item-counter">
+                  <div class="courses__item-count likes">
+                    <img src="images/icons/likes.svg" alt="">
+                    <span>3467</span>
+                  </div>
+                  <div class="courses__item-count comments">
+                    <img src="images/icons/comments.svg" alt="">
+                    <span>17</span>
+                  </div>
+                  <div class="courses__item-count time">
+                    <img src="images/icons/time.svg" alt="">
+                    <span>34мин</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="courses__item">
+            <div class="courses__item-progress">
+              <div class="courses__item-progressText">
+                Пройден на 40%
+              </div>
+              <div class="courses__item-progressBar">
+                <div class="progress-bar-length" data-progress="30"></div>
+              </div>
+            </div>
+            <div class="courses__item-inner">
+              <div class="courses__item-image">
+                <img src="images/courses.png" alt="">
+                <img class="courses__item-image--mobile" src="images/mobile-courses.png" alt="">
+              </div>
+              <div class="courses__item-box">
+                <p class="courses__item-personal">
+                  Новому сотруднику
+                </p>
+                <h6 class="courses__item-title">
+                  Не следует, однако забывать
+                </h6>
+              </div>
+            </div>
+            <div class="courses__item-info">
+              <p class="courses__item-descr">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <div class="courses__item-footer">
+                <a href="#" class="courses__item-link">Смотреть курс...</a>
+                <div class="courses__item-counter">
+                  <div class="courses__item-count likes">
+                    <img src="images/icons/likes.svg" alt="">
+                    <span>3467</span>
+                  </div>
+                  <div class="courses__item-count comments">
+                    <img src="images/icons/comments.svg" alt="">
+                    <span>17</span>
+                  </div>
+                  <div class="courses__item-count time">
+                    <img src="images/icons/time.svg" alt="">
+                    <span>34мин</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="div div2">
-            <div class="dtitle">Понедельник, 12 мая</div>
-            <div class="dbold dbold1">Повседневная практика</div>
-            <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-            <div class="dread"><a href="#">Читать дальше...</a></div>
+        <div class="reviews__item-add--mobile">
+          <a href="#">
+            Загрузить еще
+            <div class="circle"></div>
+          </a>
         </div>
-        <div class="div div3">
-            <div class="dtitle">Понедельник, 12 мая</div>
-            <div class="dbold">Идейные соображения высшего порядка</div>
-            <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-            <div class="dread"><a href="#">Читать дальше...</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="academy">
+    <div class="container">
+      <div class="academy-title">
+        Академия цифры
+      </div>
+      <div class="parent">
+        <div class="parent__wrapper">
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-1.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-1-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-right" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-2.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-2-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-2.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-3-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-4.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-4-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-5.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-1-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-1.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-1-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-2.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-2-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-3.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-3-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
+          <div class="academy__element mobile-left" data-academy-item="">
+            <div class="academy__element-image">
+              <img src="images/content/academy-image-4.png" alt="">
+            </div>
+            <div class="academy__element-imageMobile">
+              <img src="images/content/academy-image-4-mobile.png" alt="">
+            </div>
+            <div class="academy__element-box">
+              <div class="academy__element-date">
+                Понедельник, 12 мая
+              </div>
+              <h4 class="academy__element-title">
+                Не следует, однако забывать
+              </h4>
+              <p class="academy__element-info">
+                что начало повседневной работы по формированию позиции позволяет...
+              </p>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
+                Читать дальше...
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="div div4">
+        <div class="parent__aside">
+          <div class="div div6">
             <div class="div-wrap">
-                <div class="dtitle">Понедельник, 12 мая</div>
-                <div class="dbold">Не следует, однако забывать</div>
-                <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-                <div class="dread"><a href="#">Читать дальше...</a></div>
+              <div class="dtitle">Понедельник, 12 мая</div>
+              <div class="dbold">Не следует, однако забывать</div>
+              <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
+              <div class="dread"><a href="#marathon-popup" data-effect="mfp-zoom-in" class="popup-opener">Читать дальше...</a></div>
             </div>
+          </div>
         </div>
-        <div class="div div5"> 
-            <div class="div-wrap">
-                <div class="dtitle">Понедельник, 12 мая</div>
-                <div class="dbold">Не следует, однако забывать</div>
-                <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-                <div class="dread"><a href="#">Читать дальше...</a></div>
-            </div>
-        </div>
-        <div class="div div6">
-            <div class="div-wrap">
-                <div class="dtitle">Понедельник, 12 мая</div>
-                <div class="dbold">Задача организации</div>
-                <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-                <div class="dread"><a href="#">Читать дальше...</a></div>
-            </div>
-        </div>
-        
-        </div></div>
-</div>
-<div class="gloss">
-    <div class="container">
-        <div class="gloss-wrapper">
-            <div class="gloss-left"><img src="./images/gloss.png" alt="gloss"></div>
-            <div class="gloss-right">
-                <div class="gloss-title">Глоссарий</div>
-                <div class="gloss-text">В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0</div>
-                <div class="gloss-btn"><a href="#win1" class="button button-green"><img src="./images/gloss-btn.png" alt="btn"></a></div>
-            </div>
-        </div>
+
+      </div>
     </div>
-</div>
-<div class="help">
+  </div>
+  <div class="gloss">
     <div class="container">
-        <div class="help-wrapper">
-            <div class="help-title">Помогите нам стать лучше</div>
-            <div class="help-btns">
-                <div class="help-btn"><a href="#"><img src="./images/feedback.svg" alt="feed"></a></div>
-                <div class="help-btn"><a href="#"><img src="./images/question.svg" alt="question"></a></div>
-            </div>
+      <div class="gloss__inner">
+        <div class="gloss__image">
+          <h2 class="gloss__info-title gloss__info-title--image">
+            Глоссарий
+          </h2>
+          <img src="images/content/gloss.png" alt="">
         </div>
+        <div class="gloss__info">
+          <h2 class="gloss__info-title">
+            Глоссарий
+          </h2>
+          <p class="gloss__info-text">
+            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
+          </p>
+          <a href="#gloss-popup" data-effect="mfp-zoom-in"  class="gloss__info-link popup-opener">
+            Читать всё
+          </a>
+        </div>
+      </div>
     </div>
-</div>
-<footer class="footer">
+  </div>
+  <div class="help">
     <div class="container">
-        <div class="footer-first">
-            <div class="footer-wrapper">
-                <div class="footer-title">Все сайты Комус</div>
-                <div class="footer-line">
-                    <div class="footer-item">
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                    </div>
-                    <div class="footer-item">
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                    </div>
-                    <div class="footer-item">
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                    </div>
-                    <div class="footer-item">
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                    </div>
-                    <div class="footer-item">
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                        <div class="footer-item-title">Интернет-магазин «Комус»</div>
-                        <div class="footer-item-site"><a href="#">komus.ru</a></div>
-                    </div>
-                </div>
-            </div>
+      <div class="help-wrapper">
+        <div class="help-title">
+          Помогите нам стать лучше
         </div>
-        <div class="footer-second">
-            <div class="s-footer-wrapper">
-                <div class="s-footer-left">
-                    <img src="./images/logo_small 1.svg" alt="logo">
-                    <p>© «Комус», 2020</p>
-                </div>
-                <div class="s-footer-right">
-                    <p>Мы в соцсетях</p><img src="./images/Artboard.svg" alt="TELEGRAM">
-                </div>
-            </div>
+        <div class="help-btns">
+          <a href="#" class="help-btn">
+            Оставить отзыв
+          </a>
+          <a href="#" class="help-btn">
+            Задать вопрос
+          </a>
         </div>
+      </div>
     </div>
-</footer>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-first">
+        <div class="footer-wrapper">
+          <div class="footer-title">
+            Все сайты Комус
+          </div>
+          <div class="footer-line">
+            <div class="footer-item">
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+              <div class="footer-item-title">
+                Интернет-магазин «Комус»
+              </div>
+              <div class="footer-item-site">
+                <a href="#">komus.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-second">
+        <div class="s-footer-wrapper">
+          <div class="s-footer-left">
+            <img src="./images/logo_small 1.svg" alt="logo">
+            <p>
+              © «Комус», 2020
+            </p>
+          </div>
+          <div class="s-footer-right">
+            <p>
+              Мы в соцсетях
+            </p>
+            <img src="./images/Artboard.svg" alt="TELEGRAM">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<div id="command-descr-popup" class="command-descr-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+      <div class="command-descr__inner default-popup-container">
+        <h2 class="command-descr__title">
+          Турбокоманда «Чекаут»
+        </h2>
+        <p class="command-descr__text review-popup__info-text">
+          Быстрое оформление заказа любым удобным способом для пользователя ИМК и мобильной версией.
+        </p>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Цели:
+          </h6>
+          <p class="review-popup__info-text">
+            Удержание лидирующей позиции в функциональной области среди российских конкурентов за счет:
+          </p>
+          <p class="review-popup__info-text marked">
+            Омниканальности и автоматизации процессов, которые дают возможность взаимодействия с
+            компаниями в различных форматах;
+          </p>
+          <p class="review-popup__info-text marked">
+
+            E-commerce платформы, которая позволяет дополнительно сократить временные и трудовые затраты
+            сотрудников, а значит и увеличить их эффективность.
+
+          </p>
+        </div>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Продукт:
+          </h6>
+          <p class="review-popup__info-text">
+            Продукт ТК «VIP ИМК» - платформа корпоративной онлайн закупки «ПКОЗ», направленная на поддержание и визуализацию процесса корпоративной закупки с соблюдением требований компании-партнера. Платформа ПКОЗ – это:
+          </p>
+          <p class="review-popup__info-text marked small">
+            Создание и поддержка структур компаний любой сложности;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Гибкие индивидуальных настройки;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Самостоятельное администрирование сервиса партнером;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Отсутствие рекламных баннеров.
+          </p>
+        </div>
+        <div class="command-descr__team">
+          <h6 class="command-descr__team-title head-title">
+            Состав команды:
+          </h6>
+          <div class="command-descr__team-inner">
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Добрынин Евгений
+                </h6>
+                <p class="command-descr__team-text">
+
+                  Аналитик-Методолог
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Овинникова Анастасия
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Технический специалист <br>
+                  по продуктам Atlassian
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Сердюков Илья
 
 
+                </h6>
+                <p class="command-descr__team-text">
+                  DevOps-инженер
 
-<!-- Модальное окно №1 -->
-  <a href="#x" class="overlay" id="win1"></a>
- 
-  <div class="popup popup2">
-    <div class="people-wrap">
-        <div class="item-p"><img src="./images/6.svg" alt=""></div>
-        <div class="item-p"><a href="#"><img src="./images/7.svg" alt=""></a></div>
-        <div class="item-p"><a href="#"><img src="./images/7.svg" alt=""></a></div>
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Иванчук Сергей
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Системный аналитик (эксперт)
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Шарифуллин Айдар
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Владелец продукта
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Клоков Андрей
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Бизнес технолог
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Семенов Игорь
+                </h6>
+                <p class="command-descr__team-text">
+                  Главный дизайнер
+
+                </p>
+              </div>
+            </div>
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Иванов Сергей
+                </h6>
+                <p class="command-descr__team-text">
+                  Владелец процесса
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Маревичев Павел
+                </h6>
+                <p class="command-descr__team-text">
+                  Дизайнер
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Нафиков Азат
+                </h6>
+                <p class="command-descr__team-text">
+                  Бизнес аналитик
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Борисов Владимир
+                </h6>
+                <p class="command-descr__team-text">
+                  DevOps-архитектор
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Махаев Евгений
+                </h6>
+                <p class="command-descr__team-text">
+                  Ведущий разработчик Hybris backend
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Воронченко Анастасия
+                </h6>
+                <p class="command-descr__team-text">
+                  Релиз-менеджер
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Телепов Алексей
+                </h6>
+                <p class="command-descr__team-text">
+                  Архитектор Hybris Backend (эксперт)
+                </p>
+              </div>
+            </div>
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-wrapper">
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Гончаров Денис
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Специалист по нагрузочному тестированию
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Карасёв Юрий
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Специалист по функциональному тестированию
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Стафьев Вячеслав
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Координатор турбо - команд
+                  </p>
+                </div>
+              </div>
+              <div class="command-descr__team-wrapper">
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Мельников Денис
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Системный администратор инфраструктуры
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Пелих Кирилл
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Архитектор Hybris Frontend (эксперт)
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Ряшенцев Вячеслав
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Администратор СУБД
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <a class="close"title="Закрыть" href="#close"><img src="./images/close.svg" alt="close"></a>
-    
- 
-   </div>
-   
+    <div id="command-popup" class="command-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#command-descr-popup" data-effect="mfp-zoom-in" class="command-popup__item-link popup-opener">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+    </div>
+<div id="marathon-popup" class="marathon-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="marathon__inner default-popup-container">
+        <div class="marathon__info">
+          <h2 class="marathon__title">
+            Марафон открытых вебинаров
+          </h2>
+          <div class="marathon__item-image">
+            <img src="images/marathon.png" alt="">
+          </div>
+          <div class="marathon__text">
+            <p>
+              Коллеги, мы проанализировали ваши ответы на опрос по Марафону в Телеграм-канале и анонсируем темы
+              Открытых вебинаров на декабрь
+              с учетом ваших пожеланий!
+            </p>
+            <p>
+              Повышайте уровень мастерства, обменивайтесь опытом с коллегами из других регионов, решайте практические
+              кейсы и заряжайтесь энергией, участвуя в 3 серии Марафона знаний!
+            </p>
+            <p>
+              Ознакомиться с расписанием, выбрать актуальную тему и записаться вы можете по ссылке:
+              <a href="https://forms.gle/qqcCZxQHdJY7Zmnt8">https://forms.gle/qqcCZxQHdJY7Zmnt8</a>
+            </p>
+            <p>
+              Напоминаем, что участие носит свободный характер!
+            </p>
+          </div>
+          <div class="marathon__footer">
+            <p>
+              Марафон Знаний 4 квартал Серия 3
+            </p>
+            <div class="marathon__footer-buttons">
+              <a href="#" class="blue-btn arrow">
+                Скачать
+                <div class="circle"></div>
+              </a>
+              <a href="#" class="yellow-btn arrow">
+                Архив&nbsp;новостей
+                <div class="circle"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="marathon__image">
+          <img src="images/marathon.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="gloss-popup" class="gloss-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="gloss-popup-wrap default-popup-container">
+        <h2 class="gloss-popup__title">
+          Глоссарий
+        </h2>
+        <div class="gloss-popup__inner">
+          <div class="gloss-popup__col">
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                А
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile-коуч
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile-манифест
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Артефакт (Artifacts)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Б
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Бэклог Продукта (Product backlog)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Бэклог Спринта (Sprint Backlog)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                В
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Владелец продукта (Product owner)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Д
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Дорожная Карта (Roadmap)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Е
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Ежедневный Скрам (Daily Scrum Meeting)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                З
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Заинтересованное лицо (Stakeholder)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                И
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Инкремент продукта (Increment)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Инспекция
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Итерация (Iteration)
+              </a>
+            </div>
+          </div>
+          <div class="gloss-popup__col">
+
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                К
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Команда Разработки (DevTeam)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Критерии Готовности (Definition of Done)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                М
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Метрики (Metrics)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Н
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Нефункциональные Требования (Nonfunctional Requirements)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                О
+
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Обзор Спринта (Sprint Review)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                П
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Планирование Спринта (Sprint Planning)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Пользовательская история (User Story)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Прозрачность
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Р
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Релиз (Release)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Ретроспектива Спринта (Sprint Retrospective Meeting)
+              </a>
+            </div>
+          </div>
+          <div class="gloss-popup__col">
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                С
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Самоорганизация
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам (Scrum)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-доска (Scrum board)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-команда (Scrum-Team)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-мастер (Scrum Master)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Спринт (Sprint)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Т
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Теория эмпирического управления (эмпиризм)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                У
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Уточнение Бэклога Продукта (Product Backlog Refinement, PBR)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Ф
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Фича (Feature)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Фреймворк (Framework)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Е
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Цель Спринта
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Э
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Эпик (Epic)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gloss-popup-link" class="gloss-popup-link default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="gloss-popup-link__wrapper default-popup-container">
+        <h2 class="gloss-popup__title">
+          Agile
+        </h2>
+        <p class="gloss-popup__text">
+          Cобирательное название различных методик и подходов к управлению, применяемых в сфере разработки новых
+          продуктов в проектных условиях высокой доли неопределённости. Эти методики направлены на фокусировку команды
+          на нуждах и целях клиентов, упрощение оргработу короткими циклами, активно используют обратную связь,
+          предполагают повышение полномочий сотрудников.
+        </p>
+      </div>
+    </div>
 </body>
-<script type="text/javascript">
-    const buttongreen = document.querySelector('.button-green');
-    const overlay = document.querySelector('.overlay');
-    const close = document.querySelector('.close');
-    const DOM = document.querySelector('.body');
-    buttongreen.addEventListener('click', function(event){
-        event.preventDefault();
-        DOM.classList.add('active');
-        overlay.classList.add('active');
-    });
-    close.addEventListener('click', function(event){
-        event.preventDefault();
-        DOM.classList.remove('active');
-        overlay.classList.remove('active');
-    });
-</script>
+<script src="js/jquery.rateyo.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/popups.js"></script>
 </html>

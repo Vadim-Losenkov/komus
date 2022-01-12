@@ -10,10 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/bodyStyles.css">
   <link rel="stylesheet" href="css/course.css">
-
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/custom-popup.css">
 </head>
 
 <body class="body">
@@ -280,7 +283,7 @@
               <p class="reviews__item-text">
                 Курс даст информацию о преимуществах работы в Компании, ее истории.
               </p>
-              <a href="#" class="reviews__item-link">
+              <a href="#review-popup" data-effect="mfp-zoom-in" class="reviews__item-link popup-opener">
                 Подробнее
               </a>
               <div class="reviews__item-count">
@@ -435,10 +438,548 @@
       </div>
     </div>
   </footer>
+  <div id="review-popup" class="review-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="review-popup__inner default-popup-container">
+        <div class="review-popup__head">
+          <div class="review-popup__head-image">
+            <img src="images/content/popup-review-image.jpg" alt="">
+          </div>
+          <div class="review-popup__head-info">
+            <div class="review-popup__head-name">
+              Чурсина Мария Юрьевна
+            </div>
+            <div class="review-popup__head-descr">
+              Торговый представитель по развитию
+            </div>
+            <div data-popup="rate" data-rateyo-rating="4" class="review-popup__head-rate">
+
+            </div>
+          </div>
+        </div>
+        <p class="review-popup__descr">
+          Целью моей учёбы было получение образования для саморазвития и получения новых знаний. Дистанционная форма обучения на мой взгляд очень удобна в плане совмещения с работой. Материалы для обучения были в свободном доступе, что легко позволило получить необходимую информацию для окончания учёбы. Система тестирования тоже порадовала тем, что можно было неограниченно проверять свои знания в любое время.
+        </p>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Плюсы
+          </h6>
+          <p class="review-popup__info-text">
+            Удержание лидирующей позиции в функциональной области среди российских конкурентов за счет:
+
+          </p>
+          <p class="review-popup__info-text marked">
+            Омниканальности и автоматизации процессов, которые дают возможность взаимодействия с
+            компаниями в различных форматах;
+
+          </p>
+          <p class="review-popup__info-text marked">
+            E-commerce платформы, которая позволяет дополнительно сократить временные и трудовые затраты
+            сотрудников, а значит и увеличить их эффективность.
+          </p>
+        </div>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Минусы:
+          </h6>
+          <p class="review-popup__info-text">
+            Продукт ТК «VIP ИМК» - платформа корпоративной онлайн закупки «ПКОЗ», направленная на поддержание и визуализацию процесса корпоративной закупки с соблюдением требований компании-партнера. Платформа ПКОЗ – это:
+          </p>
+          <p class="review-popup__info-text marked small">
+            Создание и поддержка структур компаний любой сложности;
+
+          </p>
+          <p class="review-popup__info-text marked small">
+            Гибкие индивидуальных настройки;
+
+          </p>
+          <p class="review-popup__info-text marked small">
+            Самостоятельное администрирование сервиса партнером;
+
+          </p>
+          <p class="review-popup__info-text marked small">
+            Отсутствие рекламных баннеров.
+          </p>
+        </div>
+      </div>
+      <div class="courses__item-count likes">
+        <img src="images/icons/likes.svg" alt="">
+        <span>347</span>
+      </div>
+    </div>
+  <div id="table-popup" class="default-popup table-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="table-popup__inner default-popup-container">
+        <h2 class="table-popup__title">
+          Назначение сотрудника
+        </h2>
+        <div class="table-popup__head">
+          <div class="table-popup__head-item">
+            <div class="table-popup__head-itemName">
+              Когда
+            </div>
+            <div class="table-popup__head-itemBox">
+              <div class="table-popup__head-itemInput">
+                <div class="table-popup__head-itemInput-name">
+                  Начало обучения
+                </div>
+                <input type="text" value="10.02.2021" />
+              </div>
+              <div class="table-popup__head-stick"></div>
+              <div class="table-popup__head-itemInput">
+                <div class="table-popup__head-itemInput-name">
+                  Окончание обучения
+                </div>
+                <input type="text" value="10.02.2021" />
+              </div>
+            </div>
+          </div>
+          <div class="table-popup__head-item">
+            <div class="table-popup__head-itemName">
+              Поиск
+            </div>
+            <div class="table-popup__head-itemBox">
+              <div class="table-popup__head-itemInput search">
+                <div class="table-popup__head-itemInput-name">
+                  имя инпута
+                </div>
+                <div class="table-popup__head-serch">
+                <input type="text" value="Имя" />
+                <a href="#">
+                  <img src="images/icons/search.svg" alt="">
+                </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-popup__head-itemName">
+          Кому
+        </div>
+        <div class="table-popup__slider">
+          <div class="table-popup__info">
+            <div class="table-popup__info-inner">
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name first">
+                  ФИО
+                </div>
+                <div class="table-popup__info-descr">
+                  Подразделение
+                </div>
+                <div class="table-popup__info-mail">
+                  Email
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-popup__info">
+            <div class="table-popup__info-inner">
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name first">
+                  ФИО
+                </div>
+                <div class="table-popup__info-descr">
+                  Подразделение
+                </div>
+                <div class="table-popup__info-mail">
+                  Email
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table-popup__info">
+            <div class="table-popup__info-inner">
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name first">
+                  ФИО
+                </div>
+                <div class="table-popup__info-descr">
+                  Подразделение
+                </div>
+                <div class="table-popup__info-mail">
+                  Email
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+              <div class="table-popup__info-line">
+                <div class="table-popup__info-name">
+                  <div class="custom-checkbox"></div>
+                  <a>Абидов Астемир Русланович</a>
+                </div>
+                <div class="table-popup__info-descr">
+                  20063 Группа внедрения электронного обучения ОРиВДИ
+                </div>
+                <div class="table-popup__info-mail">
+                  aar211@komus.net
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-popup__link blue-btn arrow">
+          Назначить
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
 </body>
 <script src="js/jQuery-3.5.1/jquery-3.5.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/jquery.rateyo.min.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/main.js"></script>
+<script src="js/popups.js"></script>
 
 </html>

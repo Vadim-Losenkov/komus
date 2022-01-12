@@ -179,6 +179,15 @@ p {
   align-items: center;
   position: relative;
 }
+.reviews__item:hover {
+  background: linear-gradient(
+  90deg,
+  rgba(234, 253, 254, 1) 0%,
+  rgba(236, 244, 255, 1) 35%,
+  rgba(231, 233, 255, 1) 100%
+  );
+}
+
 .reviews__item-add {
   justify-content: flex-start;
 }
@@ -290,10 +299,8 @@ p {
   }
   .driver__item-footerbuttons a.arrow {
     font-size: 14px;
-    min-width: 130px;
-    height: 45px;
-    padding: 0 15px;
   }
+  /* 
   .driver__item-footerbuttons a.arrow::first-child {
     min-width: 105px;
     height: 45px;
@@ -310,6 +317,7 @@ p {
   .driver__item-footerbuttons a:first-child {
     margin-right: 14px;
   }
+  */
   .driver__item-countwrapper {
     display: flex;
     align-items: center;
@@ -322,7 +330,7 @@ p {
 
 @media (max-width: 930px) {
   .reviews__items {
-    display: block;
+    display: block !important;
   }
   .reviews__item {
     margin: 0 auto;
@@ -332,16 +340,33 @@ p {
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .driver__item-footerbuttons a.arrow {
+@media (max-width: 600px) {
+.blue-btn,
+   .yellow-btn {
     font-size: 12px !important;
-    min-width: 115px !important;
-    height: 35px !important;
-    padding: 0 15px;
+    height: 35px;
+    padding-right: 40px !important;
+    width: auto;
+    max-width: auto;
   }
-  .driver__item-footerbuttons .driver__item-button.arrow:first-child {
-    min-width: 95px !important;
+  .yellow-btn {
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 200px !important;
   }
+  .blue-btn.arrow .circle,
+   .yellow-btn.arrow .circle {
+    width: 25px;
+    height: 25px;
+  }
+  .blue-btn.arrow .circle::after,
+   .yellow-btn.arrow .circle::after {
+    width: 7px;
+    height: 15px;
+  }
+
+}
+@media (max-width: 500px) {
   
   .driver__item-headlink {
     font-size: 12px;
@@ -356,6 +381,9 @@ p {
   .driver__item-text {
     font-size: 12px;
     margin-bottom: 20px;
+  }
+  .driver__item-button:first-child {
+    margin-right: 10px !important;
   }
   .driver__item-count + .driver__item-count {
     margin-left: 15px;
@@ -454,7 +482,7 @@ p {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .driver__item-footerbuttons {
     flex-wrap: wrap;
   }

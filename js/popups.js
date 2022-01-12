@@ -8,21 +8,31 @@ $(function() {
         this.st.mainClass = this.st.el.attr('data-effect');
       },
       open: function() {
-        $('.table-popup__slider').slick({})
+        if ($('.table-popup__slider').length) {
+          $('.table-popup__slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: false
+          })
+        }
       },
       close: function() {
-        $('.table-popup__slider').slick('unslick')
+        if ($('.table-popup__slider').length) {
+          $('.table-popup__slider').slick('unslick')
+        }
       }
     },
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   })
   
-  $('[data-popup="rate"]').rateYo({
-    readOnly: true,
-    ratedFill: "#fda700",
-    normalFill: "#c4c4c4",
-    starWidth: "12px"
-  })
+  if ($('[data-popup="rate"]').length) {
+    $('[data-popup="rate"]').rateYo({
+      readOnly: true,
+      ratedFill: "#fda700",
+      normalFill: "#c4c4c4",
+      starWidth: "12px"
+    })
+  }
   
   $('[data-popup="faq"]').on('click', function() {
     $(this).toggleClass('open')

@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=600px"> <!-- device-width, initial-scale=1 -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- device-width, initial-scale=1 -->
   <title>Документ без названия</title>
   <link rel="stylesheet" href="/assets/frontend/fonts/ptrootui.css">
   <link rel="stylesheet" href="/assets/frontend/fonts/roboto.css">
@@ -22,19 +21,15 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/custom-popup.css">
+  <link rel="stylesheet" href="css/marathon.css">
   <link rel="stylesheet" href="css/bodyStyles.css">
-
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>
-    eruda.init();
-  </script>
 </head>
 
 <body>
 
 
 
-  <div class="animation-block__wrapper">
+  <div style="overflow-x: hidden;" class="animation-block__wrapper">
 
     <div class="animation-block__top">
       <div class="animation-block__topBackground">
@@ -276,10 +271,10 @@
           </div>
           <div class="card-btns">
             <div class="card-follow">
-              <a href="#" class="yellow-btn arrow">Записаться <div class="circle"></div></a>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="yellow-btn arrow popup-opener">Записаться <div class="circle"></div></a>
             </div>
             <div class="card-all">
-              <a href="#">Все события</a>
+              <a href="#marathon-popup" class="popup-opener" data-effect="mfp-zoom-in" >Все события</a>
             </div>
           </div>
         </div>
@@ -297,7 +292,7 @@
               Проходи курсы для достижения великих результатов
             </div>
             <div class="right-block-btn">
-              <a href="#" class="blue-btn arrow">Вперед! <span class="circle"></span></a>
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="blue-btn arrow popup-opener">Вперед! <span class="circle"></span></a>
             </div>
           </div>
         </div>
@@ -327,7 +322,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -349,7 +344,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -371,7 +366,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -393,7 +388,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -415,7 +410,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -437,7 +432,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -459,7 +454,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -481,7 +476,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -503,7 +498,7 @@
               <p class="academy__element-info">
                 что начало повседневной работы по формированию позиции позволяет...
               </p>
-              <a href="#" class="academy__element-link">
+              <a href="#marathon-popup" data-effect="mfp-zoom-in" class="academy__element-link popup-opener">
                 Читать дальше...
               </a>
             </div>
@@ -515,7 +510,7 @@
               <div class="dtitle">Понедельник, 12 мая</div>
               <div class="dbold">Не следует, однако забывать</div>
               <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-              <div class="dread"><a href="#">Читать дальше...</a></div>
+              <div class="dread"><a href="#marathon-popup" data-effect="mfp-zoom-in" class="popup-opener">Читать дальше...</a></div>
             </div>
           </div>
         </div>
@@ -525,21 +520,23 @@
   </div>
   <div class="gloss">
     <div class="container">
-      <div class="gloss-wrapper">
-        <div class="gloss-left">
-          <img src="./images/gloss.png" alt="gloss">
-        </div>
-        <div class="gloss-right">
-          <div class="gloss-title">
+      <div class="gloss__inner">
+        <div class="gloss__image">
+          <h2 class="gloss__info-title gloss__info-title--image">
             Глоссарий
-          </div>
-          <div class="gloss-text">
-            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном
-            языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
-          </div>
-          <div class="gloss-btn">
-            <a href="#" class="blue-btn gloss">Читать всё</a>
-          </div>
+          </h2>
+          <img src="images/content/gloss.png" alt="">
+        </div>
+        <div class="gloss__info">
+          <h2 class="gloss__info-title">
+            Глоссарий
+          </h2>
+          <p class="gloss__info-text">
+            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
+          </p>
+          <a href="#gloss-popup" data-effect="mfp-zoom-in"  class="gloss__info-link popup-opener">
+            Читать всё
+          </a>
         </div>
       </div>
     </div>
@@ -551,12 +548,12 @@
           Помогите нам стать лучше
        </div>
        <div class="help-btns">
-         <div class="help-btn">
-           <a href="#" class="yellow-btn help">Оставить отзыв</a>
-         </div>
-         <div class="help-btn">
-           <a href="#" class="yellow-btn help">Задать вопрос</a>
-         </div>
+         <a href="#" class="help-btn">
+           Оставить отзыв
+         </a>
+         <a href="#" class="help-btn">
+           Задать вопрос
+         </a>
        </div>
      </div>
    </div>
@@ -660,16 +657,22 @@
       </div>
     </div>
   </footer>
-
-
-    <div id="marathon-popup" class="popup">
-      <div class="marathon-popup__container">
+  
+  <div id="marathon-popup" class="marathon-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="marathon__inner default-popup-container">
         <div class="marathon__info">
           <h2 class="marathon__title">
             Марафон открытых вебинаров
           </h2>
+          <div class="marathon__item-image">
+            <img src="images/marathon.png" alt="">
+          </div>
           <div class="marathon__text">
-            <p>Коллеги, мы проанализировали ваши ответы на опрос по Марафону в Телеграм-канале и анонсируем темы
+            <p>
+              Коллеги, мы проанализировали ваши ответы на опрос по Марафону в Телеграм-канале и анонсируем темы
               Открытых вебинаров на декабрь
               с учетом ваших пожеланий!
             </p>
@@ -678,7 +681,7 @@
               кейсы и заряжайтесь энергией, участвуя в 3 серии Марафона знаний!
             </p>
             <p>
-              Ознакомиться с расписанием, выбрать актуальную тему и записаться вы можете по ссылке: 
+              Ознакомиться с расписанием, выбрать актуальную тему и записаться вы можете по ссылке:
               <a href="https://forms.gle/qqcCZxQHdJY7Zmnt8">https://forms.gle/qqcCZxQHdJY7Zmnt8</a>
             </p>
             <p>
@@ -686,15 +689,19 @@
             </p>
           </div>
           <div class="marathon__footer">
-            <p>Марафон Знаний 4 квартал Серия 3</p>
-            <a href="#" class="blue-btn arrow">
-              Скачать
-              <div class="circle"></div>
-            </a>
-            <a href="#" class="yellow-btn arrow">
-              Архив новостей
-              <div class="circle"></div>
-            </a>
+            <p>
+              Марафон Знаний 4 квартал Серия 3
+            </p>
+            <div class="marathon__footer-buttons">
+              <a href="#" class="blue-btn arrow">
+                Скачать
+                <div class="circle"></div>
+              </a>
+              <a href="#" class="yellow-btn arrow">
+                Архив&nbsp;новостей
+                <div class="circle"></div>
+              </a>
+            </div>
           </div>
         </div>
         <div class="marathon__image">
@@ -702,10 +709,245 @@
         </div>
       </div>
     </div>
-    <!-- https://www.figma.com/file/AcNmvcpOZ9nRXCkHKkDMJd/other-pages?node-id=0%3A1 -->
+    <div id="gloss-popup" class="gloss-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="gloss-popup-wrap default-popup-container">
+        <h2 class="gloss-popup__title">
+          Глоссарий
+        </h2>
+        <div class="gloss-popup__inner">
+          <div class="gloss-popup__col">
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                А
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile-коуч
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile-манифест
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Артефакт (Artifacts)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Б
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Бэклог Продукта (Product backlog)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Бэклог Спринта (Sprint Backlog)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                В
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Владелец продукта (Product owner)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Д
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Дорожная Карта (Roadmap)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Е
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Ежедневный Скрам (Daily Scrum Meeting)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                З
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Заинтересованное лицо (Stakeholder)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                И
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Инкремент продукта (Increment)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Инспекция
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Итерация (Iteration)
+              </a>
+            </div>
+          </div>
+          <div class="gloss-popup__col">
 
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                К
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Команда Разработки (DevTeam)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Критерии Готовности (Definition of Done)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                М
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Метрики (Metrics)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Н
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Нефункциональные Требования (Nonfunctional Requirements)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                О
+
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Обзор Спринта (Sprint Review)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                П
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Планирование Спринта (Sprint Planning)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Пользовательская история (User Story)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Прозрачность
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Р
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Релиз (Release)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Ретроспектива Спринта (Sprint Retrospective Meeting)
+              </a>
+            </div>
+          </div>
+          <div class="gloss-popup__col">
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                С
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Самоорганизация
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам (Scrum)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-доска (Scrum board)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-команда (Scrum-Team)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-мастер (Scrum Master)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Спринт (Sprint)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Т
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Теория эмпирического управления (эмпиризм)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                У
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Уточнение Бэклога Продукта (Product Backlog Refinement, PBR)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Ф
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Фича (Feature)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Фреймворк (Framework)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Е
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Цель Спринта
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Э
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Эпик (Epic)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gloss-popup-link" class="gloss-popup-link default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="gloss-popup-link__wrapper default-popup-container">
+        <h2 class="gloss-popup__title">
+          Agile
+        </h2>
+        <p class="gloss-popup__text">
+          Cобирательное название различных методик и подходов к управлению, применяемых в сфере разработки новых
+          продуктов в проектных условиях высокой доли неопределённости. Эти методики направлены на фокусировку команды
+          на нуждах и целях клиентов, упрощение оргработу короткими циклами, активно используют обратную связь,
+          предполагают повышение полномочий сотрудников.
+        </p>
+      </div>
+    </div>
   
   <script src="js/main.js"></script>
+  <script src="js/popups.js"></script>
 </body>
 
 </html>
