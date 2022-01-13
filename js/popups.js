@@ -25,6 +25,16 @@ $(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   })
   
+  console.log($('#close-popup').length);
+  $('#close-popup').on('click', (e) => {
+    e.preventDefault()
+    console.log(e);
+    $('.popup-opener').magnificPopup('close')
+  })
+  $('.table-popup__info-name').on('click', function() {
+    $(this).children('.custom-checkbox').toggleClass('active')
+  })
+  
   if ($('[data-popup="rate"]').length) {
     $('[data-popup="rate"]').rateYo({
       readOnly: true,
@@ -38,11 +48,10 @@ $(function() {
     $(this).toggleClass('open')
     $(this).siblings('.faq-popup__item-text').slideToggle(300)
   })
-  
-  $('#close-popup').on('click', () => {
+})
+
+document.addEventListener('click', (e) => {
+  if (e.target.closest('#close-popup')) {
     $('.popup-opener').magnificPopup('close')
-  })
-  $('.table-popup__info-name').on('click', function() {
-    $(this).children('.custom-checkbox').toggleClass('active')
-  })
+  }
 })

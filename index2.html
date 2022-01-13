@@ -19,9 +19,15 @@
   <script src="js/svg_animation_script.js"></script>
   <script src="js/flyed_boxes_animation_script.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/bodyStyles.css">
+  <link rel="stylesheet" href="css/course.css">
+  <link rel="stylesheet" href="css/marathon.css">
   <link rel="stylesheet" href="css/listing.css">
-
+  <link rel="stylesheet" href="css/custom-popup.css">
 </head>
 
 <body class="body">
@@ -253,6 +259,7 @@
       </div>
     </div>
   </div>
+  
   <div class="card">
     <div class="container">
       <div class="card-wrapper">
@@ -671,8 +678,7 @@
               <div class="dtitle">Понедельник, 12 мая</div>
               <div class="dbold">Не следует, однако забывать</div>
               <div class="dtext">что начало повседневной работы по формированию позиции позволяет...</div>
-              <div class="dread"><a href="#marathon-popup" data-effect="mfp-zoom-in" class="popup-opener">Читать
-                  дальше...</a></div>
+              <div class="dread"><a href="#marathon-popup" data-effect="mfp-zoom-in" class="popup-opener">Читать дальше...</a></div>
             </div>
           </div>
         </div>
@@ -694,10 +700,9 @@
             Глоссарий
           </h2>
           <p class="gloss__info-text">
-            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном
-            языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
+            В любом новом деле важно «на берегу» договориться о терминах и определениях, чтобы все говорили на одном языке. На днях Scaled Agile опубликовали русский перевод глоссария терминов SAFe 4.0
           </p>
-          <a href="#" class="gloss__info-link">
+          <a href="#gloss-popup" data-effect="mfp-zoom-in"  class="gloss__info-link popup-opener">
             Читать всё
           </a>
         </div>
@@ -821,7 +826,645 @@
     </div>
   </footer>
 
-</body>
-<script src="js/main.js"></script>
+<div id="command-descr-popup" class="command-descr-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+      <div class="command-descr__inner default-popup-container">
+        <h2 class="command-descr__title">
+          Турбокоманда «Чекаут»
+        </h2>
+        <p class="command-descr__text review-popup__info-text">
+          Быстрое оформление заказа любым удобным способом для пользователя ИМК и мобильной версией.
+        </p>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Цели:
+          </h6>
+          <p class="review-popup__info-text">
+            Удержание лидирующей позиции в функциональной области среди российских конкурентов за счет:
+          </p>
+          <p class="review-popup__info-text marked">
+            Омниканальности и автоматизации процессов, которые дают возможность взаимодействия с
+            компаниями в различных форматах;
+          </p>
+          <p class="review-popup__info-text marked">
 
+            E-commerce платформы, которая позволяет дополнительно сократить временные и трудовые затраты
+            сотрудников, а значит и увеличить их эффективность.
+
+          </p>
+        </div>
+        <div class="review-popup__info">
+          <h6 class="review-popup__info-title">
+            Продукт:
+          </h6>
+          <p class="review-popup__info-text">
+            Продукт ТК «VIP ИМК» - платформа корпоративной онлайн закупки «ПКОЗ», направленная на поддержание и визуализацию процесса корпоративной закупки с соблюдением требований компании-партнера. Платформа ПКОЗ – это:
+          </p>
+          <p class="review-popup__info-text marked small">
+            Создание и поддержка структур компаний любой сложности;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Гибкие индивидуальных настройки;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Самостоятельное администрирование сервиса партнером;
+          </p>
+          <p class="review-popup__info-text marked small">
+            Отсутствие рекламных баннеров.
+          </p>
+        </div>
+        <div class="command-descr__team">
+          <h6 class="command-descr__team-title head-title">
+            Состав команды:
+          </h6>
+          <div class="command-descr__team-inner">
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Добрынин Евгений
+                </h6>
+                <p class="command-descr__team-text">
+
+                  Аналитик-Методолог
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Овинникова Анастасия
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Технический специалист <br>
+                  по продуктам Atlassian
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Сердюков Илья
+
+
+                </h6>
+                <p class="command-descr__team-text">
+                  DevOps-инженер
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Иванчук Сергей
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Системный аналитик (эксперт)
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Шарифуллин Айдар
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Владелец продукта
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Клоков Андрей
+
+                </h6>
+                <p class="command-descr__team-text">
+                  Бизнес технолог
+
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+
+                  Семенов Игорь
+                </h6>
+                <p class="command-descr__team-text">
+                  Главный дизайнер
+
+                </p>
+              </div>
+            </div>
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Иванов Сергей
+                </h6>
+                <p class="command-descr__team-text">
+                  Владелец процесса
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Маревичев Павел
+                </h6>
+                <p class="command-descr__team-text">
+                  Дизайнер
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Нафиков Азат
+                </h6>
+                <p class="command-descr__team-text">
+                  Бизнес аналитик
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Борисов Владимир
+                </h6>
+                <p class="command-descr__team-text">
+                  DevOps-архитектор
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Махаев Евгений
+                </h6>
+                <p class="command-descr__team-text">
+                  Ведущий разработчик Hybris backend
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Воронченко Анастасия
+                </h6>
+                <p class="command-descr__team-text">
+                  Релиз-менеджер
+                </p>
+              </div>
+              <div class="command-descr__team-item">
+                <h6 class="command-descr__team-title">
+                  Телепов Алексей
+                </h6>
+                <p class="command-descr__team-text">
+                  Архитектор Hybris Backend (эксперт)
+                </p>
+              </div>
+            </div>
+            <div class="command-descr__team-col">
+              <div class="command-descr__team-wrapper">
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Гончаров Денис
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Специалист по нагрузочному тестированию
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Карасёв Юрий
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Специалист по функциональному тестированию
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Стафьев Вячеслав
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Координатор турбо - команд
+                  </p>
+                </div>
+              </div>
+              <div class="command-descr__team-wrapper">
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Мельников Денис
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Системный администратор инфраструктуры
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Пелих Кирилл
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Архитектор Hybris Frontend (эксперт)
+                  </p>
+                </div>
+                <div class="command-descr__team-item">
+                  <h6 class="command-descr__team-title">
+                    Ряшенцев Вячеслав
+                  </h6>
+                  <p class="command-descr__team-text">
+                    Администратор СУБД
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="command-popup" class="command-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#command-descr-popup" data-effect="mfp-zoom-in" class="command-popup__item-link popup-opener">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+      <div class="command-popup__item">
+        <div class="popup-bookmark" style="background: #C4ADE2;"></div>
+        <h4 class="command-popup__item-title">
+          Турбокоманда «VIP ИМК»
+        </h4>
+        <p class="command-popup__item-text">
+          Инновационная платформа корпоративной онлайн закупки, которая позволит Компании идти в ногу со временем и быть частью огромной электронной торговой площадки во всем мире».
+        </p>
+        <a href="#" class="command-popup__item-link">
+          Подробнее
+        </a>
+      </div>
+    </div>
+<div id="marathon-popup" class="marathon-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="marathon__inner default-popup-container">
+        <div class="marathon__info">
+          <h2 class="marathon__title">
+            Марафон открытых вебинаров
+          </h2>
+          <div class="marathon__item-image">
+            <img src="images/marathon.png" alt="">
+          </div>
+          <div class="marathon__text">
+            <p>
+              Коллеги, мы проанализировали ваши ответы на опрос по Марафону в Телеграм-канале и анонсируем темы
+              Открытых вебинаров на декабрь
+              с учетом ваших пожеланий!
+            </p>
+            <p>
+              Повышайте уровень мастерства, обменивайтесь опытом с коллегами из других регионов, решайте практические
+              кейсы и заряжайтесь энергией, участвуя в 3 серии Марафона знаний!
+            </p>
+            <p>
+              Ознакомиться с расписанием, выбрать актуальную тему и записаться вы можете по ссылке:
+              <a href="https://forms.gle/qqcCZxQHdJY7Zmnt8">https://forms.gle/qqcCZxQHdJY7Zmnt8</a>
+            </p>
+            <p>
+              Напоминаем, что участие носит свободный характер!
+            </p>
+          </div>
+          <div class="marathon__footer">
+            <p>
+              Марафон Знаний 4 квартал Серия 3
+            </p>
+            <div class="marathon__footer-buttons">
+              <a href="#" class="blue-btn arrow">
+                Скачать
+                <div class="circle"></div>
+              </a>
+              <a href="#" class="yellow-btn arrow">
+                Архив&nbsp;новостей
+                <div class="circle"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="marathon__image">
+          <img src="images/marathon.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="gloss-popup" class="gloss-popup default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="gloss-popup-wrap default-popup-container">
+        <h2 class="gloss-popup__title">
+          Глоссарий
+        </h2>
+        <div class="gloss-popup__inner">
+          <div class="gloss-popup__col">
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                А
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile-коуч
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Agile-манифест
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Артефакт (Artifacts)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Б
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Бэклог Продукта (Product backlog)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Бэклог Спринта (Sprint Backlog)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                В
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Владелец продукта (Product owner)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Д
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Дорожная Карта (Roadmap)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Е
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Ежедневный Скрам (Daily Scrum Meeting)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                З
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Заинтересованное лицо (Stakeholder)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                И
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Инкремент продукта (Increment)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Инспекция
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Итерация (Iteration)
+              </a>
+            </div>
+          </div>
+          <div class="gloss-popup__col">
+
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                К
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Команда Разработки (DevTeam)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Критерии Готовности (Definition of Done)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                М
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Метрики (Metrics)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Н
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Нефункциональные Требования (Nonfunctional Requirements)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                О
+
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Обзор Спринта (Sprint Review)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                П
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Планирование Спринта (Sprint Planning)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Пользовательская история (User Story)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Прозрачность
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Р
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Релиз (Release)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Ретроспектива Спринта (Sprint Retrospective Meeting)
+              </a>
+            </div>
+          </div>
+          <div class="gloss-popup__col">
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                С
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Самоорганизация
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам (Scrum)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-доска (Scrum board)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-команда (Scrum-Team)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Скрам-мастер (Scrum Master)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Спринт (Sprint)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Т
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Теория эмпирического управления (эмпиризм)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                У
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Уточнение Бэклога Продукта (Product Backlog Refinement, PBR)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Ф
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Фича (Feature)
+              </a>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Фреймворк (Framework)
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Е
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Цель Спринта
+              </a>
+            </div>
+            <div class="gloss-popup__item">
+              <h6 class="gloss-popup__item-title">
+                Э
+              </h6>
+              <a href="#gloss-popup-link" class="gloss-popup__item-link popup-opener" data-effect="mfp-zoom-in">
+                Эпик (Epic)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gloss-popup-link" class="gloss-popup-link default-popup mfp-with-anim mfp-hide">
+      <div id="close-popup">
+        <img src="images/icons/close.svg" alt="">
+      </div>
+      <div class="gloss-popup-link__wrapper default-popup-container">
+        <h2 class="gloss-popup__title">
+          Agile
+        </h2>
+        <p class="gloss-popup__text">
+          Cобирательное название различных методик и подходов к управлению, применяемых в сфере разработки новых
+          продуктов в проектных условиях высокой доли неопределённости. Эти методики направлены на фокусировку команды
+          на нуждах и целях клиентов, упрощение оргработу короткими циклами, активно используют обратную связь,
+          предполагают повышение полномочий сотрудников.
+        </p>
+      </div>
+    </div>
+</body>
+<script src="js/jquery.rateyo.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/popups.js"></script>
 </html>
