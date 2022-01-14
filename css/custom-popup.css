@@ -107,6 +107,27 @@ a {
   opacity: 0;
 }
 
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0; }
+  
+.mfp-zoom-in.mfp-bg {
+  opacity: 1;
+  background: rgba(34, 30, 52, 0.4);
+  backdrop-filter: blur(20px);
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 1;
+  background: rgba(34, 30, 52, 0.4);
+  backdrop-filter: blur(20px);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 1;
+  background: rgba(34, 30, 52, 0.4);
+  backdrop-filter: blur(20px);
+}
+
+
 .links__inner {
   padding-top: 70px;
 }
@@ -1022,6 +1043,9 @@ a {
   
 }
 @media (max-width: 768px) {
+  .default-popup {
+    margin-top: 120px;
+  }
   .marathon-popup .marathon__footer {
     display: block;
   }
@@ -1143,12 +1167,19 @@ a {
     padding-bottom: 50px;
   }
   .blue-btn,
-  .marathon-popup .yellow-btn {
+  .yellow-btn,
+  .help-btn,
+  .red-btn {
     font-size: 12px !important;
     height: 35px;
-    padding-right: 40px !important;
-    width: auto;
-    max-width: auto;
+    
+  }
+  .help-btn {
+    padding: 0 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    line-height: 100%;
   }
   .yellow-btn {
     width: 150px !important;

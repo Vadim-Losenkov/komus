@@ -29,6 +29,7 @@ p {
 .yellow-btn,
 .red-btn,
 .blue-btn {
+  font-family: Fira Sans;
   background-color: #f2994a;
   height: 54px;
   border-radius: 42px;
@@ -392,6 +393,7 @@ p {
 .parent {
   display: flex;
   column-gap: 29px;
+  padding-right: 50px;
   overflow-x: clip;
   /*display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1723,6 +1725,7 @@ body {
   }
   .academy__element.mobile-left .academy__element-imageMobile img {
     border-radius: 15px 0 0 15px;
+    
   }
   .academy__element.mobile-right .academy__element-imageMobile img {
     border-radius: 0 15px 15px 0;
@@ -1740,6 +1743,7 @@ body {
   }
 
   .parent {
+    padding: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -2030,6 +2034,7 @@ body {
 }
 @media (max-width: 500px) {
   .blue-btn,
+  .red-btn,
   .yellow-btn {
     font-size: 12px !important;
     height: 35px;
@@ -2048,11 +2053,13 @@ body {
     max-width: 200px !important;
   }
   .blue-btn.arrow .circle,
+  .red-btn.arrow .circle,
   .yellow-btn.arrow .circle {
     width: 25px;
     height: 25px;
   }
   .blue-btn.arrow .circle::after,
+  .red-btn.arrow .circle::after,
   .yellow-btn.arrow .circle::after {
     width: 7px;
     height: 15px;
@@ -2072,7 +2079,13 @@ body {
   .gloss__info-link {
     font-size: 14px;
     line-height: 100%;
-    padding: 5px 30px;
+    padding: 10px 30px;
+  }
+  .help-btn {
+    padding: 0 10px !important;
+    padding-top: 2px !important;
+    font-size: 12px !important;
+    
   }
 }
 @media screen and (max-width: 475px) {
@@ -2161,10 +2174,12 @@ body {
     margin-bottom: 6px;
   }
   .academy-title {
-    padding-top: 18px;
-    font-size: 24px;
-    margin-bottom: 0px;
-    text-align: center;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 64px;
+color: #000000;
   }
   .div1 {
     height: auto;
@@ -2319,6 +2334,7 @@ body {
   }
   .help-btn {
     margin-bottom: 16px;
+    
   }
   .help-btn a img {
     max-width: 180px;
