@@ -583,7 +583,7 @@ body.unicorn .animation-block__sample{
 		border-radius: 50%;
 	}
 	.animation-block__wrapper{
-		min-height:812px;
+		min-height: 1000px;
 	}
 	.animation-block__slogan {
 		bottom: 30px;

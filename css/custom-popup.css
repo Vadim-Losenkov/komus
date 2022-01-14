@@ -1045,6 +1045,10 @@ a {
 @media (max-width: 768px) {
   .default-popup {
     margin-top: 120px;
+    padding: 0;
+  }
+  .default-popup-container {
+    padding: 20px 30px;
   }
   .marathon-popup .marathon__footer {
     display: block;
@@ -1162,10 +1166,6 @@ a {
   }
 }
 @media (max-width: 500px) {
-  .default-popup {
-    padding-top: 40px;
-    padding-bottom: 50px;
-  }
   .blue-btn,
   .yellow-btn,
   .help-btn,
@@ -1175,11 +1175,7 @@ a {
     
   }
   .help-btn {
-    padding: 0 10px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center
-    line-height: 100%;
+    padding: 4px 10px !important;
   }
   .yellow-btn {
     width: 150px !important;
@@ -1220,7 +1216,7 @@ a {
   }
   .gloss-popup__title {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .gloss-popup__item {
     margin-bottom: 30px;
