@@ -309,6 +309,15 @@ p {
   grid-area: Item-1;
 }
 .academy__element.academy-item-1 .academy__element-image {
+  position: relative;
+}
+.academy__element.academy-item-1 svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.academy__element.academy-item-1 .academy__element-image {
   margin: 0 -30px;
   margin-top: -25px;
 }
@@ -1148,6 +1157,14 @@ body {
 }
 .courses {
   margin: 40px 0;
+  position: relative;
+}
+.courses::before {
+  content: url("../images/icons/course-bg-1.svg");
+  position: absolute;
+  top: 10%;
+  z-index: 0;
+  left: 0;
 }
 .course-title {
   font-size: 40px;
