@@ -310,6 +310,7 @@ p {
 }
 .academy__element.academy-item-1 .academy__element-image {
   position: relative;
+  height: 335px;
 }
 .academy__element.academy-item-1 svg {
   position: absolute;
@@ -359,6 +360,13 @@ p {
 .academy__element.academy-item-2 .academy__element-image img {
   margin-bottom: -6px;
   border-radius: 0 15px 15px 0;
+  object-fit: cover;
+  background-position: center;
+  width: 100px;
+  height: 100%;
+}
+.academy__element.academy-item-2 .academy__element-image svg {
+
 }
 
 .academy__element.academy-item-3 {
@@ -401,6 +409,9 @@ p {
 }
 .academy__element.academy-item-5 .academy__element-image {
   margin-left: auto;
+}
+.academy__element.academy-item-5 .academy__element-image svg {
+  margin-top: -38px;
 }
 .academy__element.academy-item-5 .academy__element-box {
   padding: 25px 30px;
@@ -822,11 +833,20 @@ a {
   top: -150px;
   right: -30px;
 }
-.div6::before {
-  content: url("../images/a4.png");
+.div6 .user-image {
+  border-radius: 50%;
   position: absolute;
   top: 30px;
   left: 30px;
+  width: 105px;
+  height: 105px;
+}
+.div6 .user-image img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 .div5 .dtext {
   max-width: 350px;
