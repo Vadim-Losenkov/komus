@@ -24,7 +24,8 @@
 		background: linear-gradient(46.35deg, #15324B 30.14%, #18675E 72.1%);
 		position:relative;
 		width:100%;
-		min-height:98vh;
+		min-height:  760px;
+		/*min-height:98vh;*/
 		justify-content:space-between;
 	}
 
@@ -287,6 +288,12 @@
 	filter: blur(30px);
 	z-index:9;
 	border-radius:50%;
+}
+.header__info-image {
+  animation-name: levitation;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 

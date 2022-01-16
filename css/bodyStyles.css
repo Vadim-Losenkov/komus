@@ -1519,9 +1519,41 @@ body {
   margin-top: 20px;
 }
 
+.idx-3 .header__info-image {
+  animation-name: levitation-idx-3;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.header__info-image {
+  animation-name: levitation;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes levitation {
+	0%   { transform: translateY(-0px); }
+	25%  { transform: translateY(30px); }	
+	50%  { transform: translateY(-0px); }	
+	75%  { transform: translateY(30px); }			
+	100% { transform: translateY(-0px); }	
+}
+@keyframes levitation-idx-3 {
+	0%   { transform: translateY(-100px); }
+	25%  { transform: translateY(-70px); }	
+	50%  { transform: translateY(-100px); }	
+	75%  { transform: translateY(-70px); }			
+	100% { transform: translateY(-100px); }	
+}
+
+
 .header__info {
   z-index: 100;
-  max-width: 1300px;
+  max-width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 0 15px;
   margin: 0 auto;
   display: flex;
@@ -1585,6 +1617,12 @@ body {
   max-width: 601px;
 }
 
+@media (max-width: 1300px) {
+  .header__info {
+    padding: 10px;
+    max-width: 1300px;
+  }
+}
 @media (max-width: 1150px) {
   .categorySelection__block.categorySelection__block_right {
     margin-right: -390px;
@@ -1649,8 +1687,11 @@ body {
 
 @media (max-width: 960px) {
   .idx-3 .header__info-image {
-    transform: translateY(20px);
-  }
+  animation-name: levitation;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
   .header__info-image {
     order: -1;
     max-width: 300px;
