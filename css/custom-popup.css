@@ -775,6 +775,10 @@ a {
 .table-popup {
   
 }
+
+.table-popup__link {
+  display: block;
+}
 .table-popup__head {
   display: flex;
   column-gap: 30px;
@@ -1334,6 +1338,7 @@ a {
   .table-popup__link {
     max-width: 150px;
     width: auto;
+    display: block;
   }
 }
 

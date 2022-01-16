@@ -367,7 +367,9 @@ p {
 
 }
 @media (max-width: 500px) {
-  
+  .driver {
+    margin-top: 10px;
+  }
   .driver__item-headlink {
     font-size: 12px;
     margin-left: 10px;
