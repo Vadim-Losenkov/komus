@@ -194,12 +194,11 @@ li {
 }
 .courses__title {
   font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 64px;
-  color: #18191f;
-  margin-right: 46px;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #000000;
 }
 
 .courses__head {
@@ -224,7 +223,7 @@ li {
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
-  margin: 0 10px;
+  margin: 0 3px;
 }
 .courses__toggler-button.open {
   border-top: 1px solid #b1cddd;
@@ -233,6 +232,7 @@ li {
   border-radius: 10px 10px 0 0;
   position: relative;
   line-height: 130%;
+  font-weight: 500;
 }
 .courses__items.open {
   display: flex;
@@ -268,7 +268,7 @@ li {
   margin: -30px;
 }
 .courses__item-image,
-.courses__item-image img {
+.courses__item-image svg {
   border-top-right-radius: 20px;
 }
 .courses__item-progress {
@@ -400,6 +400,9 @@ li {
 }
 
 @media (max-width: 600px) {
+  .top {
+    margin-top: 10px;
+  }
   .benefits {
     border: 1px solid #f2994a;
   }
@@ -455,8 +458,9 @@ li {
     align-items: center;
     justify-content: space-between;
   }
-  .courses__item-image img {
-    display: none;
+  .courses__item-image svg {
+    width: 150px;
+    margin: 15px;
   }
   .courses__item-box {
     order: -1;
@@ -482,9 +486,9 @@ li {
   .courses__item-descr {
     font-size: 12px;
   }
-  .courses__item-image img.courses__item-image--mobile {
+  /*.courses__item-image img.courses__item-image--mobile {
     display: block;
-  }
+  } */
   
   .courses__item-count + .courses__item-count {
     margin-left: 15px;

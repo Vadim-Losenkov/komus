@@ -3,6 +3,8 @@
 }
 body {
   overflow-x: hidden;
+  position: relative;
+  z-index: 100;
 }
 h1,
 h2,
@@ -24,6 +26,10 @@ li {
 }
 p {
   margin: 0;
+}
+
+a {
+  color: inherit;
 }
 
 .yellow-btn,
@@ -299,6 +305,10 @@ p {
   color: #0d3e89;
 }
 
+.academy__element .academy__element-image img {
+  display: none;
+}
+
 .academy__element.academy-item-1 {
   max-width: 320px;
   width: 100%;
@@ -362,7 +372,7 @@ p {
   border-radius: 0 15px 15px 0;
   object-fit: cover;
   background-position: center;
-  width: 100px;
+  width: 100%;
   height: 100%;
 }
 .academy__element.academy-item-2 .academy__element-image svg {
@@ -1174,6 +1184,8 @@ body {
   padding-top: 30px;
   padding-bottom: 45px;
   margin-top: 70px;
+  position: relative;
+  z-index: 10;
 }
 .courses {
   margin: 40px 0;
@@ -1281,7 +1293,14 @@ body {
   color: #000;
 }
 .idx-3 .reviews__item-add--mobile {
-  display: inline-block !important;
+  /*display: block;*/
+  display: flex !important;
+  justify-content: center;
+}
+.reviews__item-add--mobile {
+  /*display: block;*/
+  display: flex !important;
+  justify-content: center;
 }
 .course-feed {
   display: flex;
@@ -1807,11 +1826,21 @@ body {
     flex-direction: row;
     padding: 0 !important;
   }
+  .academy__element .academy__element-image svg {
+    display: none;
+  }
+  .academy__element .academy__element-image img {
+    display: block;
+  }
   .academy__element.mobile-right .academy__element-image {
-    clip-path: circle(75.3% at 100% 49%);
+    clip-path: circle(75.3% at 100% 48%);
+    height: auto;
+    max-width: 125px;
   }
   .academy__element.mobile-left .academy__element-image {
     clip-path: circle(75.3% at 0 48%);
+    height: auto;
+    max-width: 125px;
   }
   .academy__element.academy-item-1 .academy__element-image,
   .academy__element.academy-item-2 .academy__element-image,
@@ -2229,7 +2258,7 @@ body {
     left: 10px;
   }
   .div6 .div-wrap {
-    margin-left: 100px;
+    margin-left: 115px;
   }
 
   .card-follow a img {

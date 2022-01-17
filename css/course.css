@@ -21,6 +21,17 @@ p {
 .driver {
   margin-top: 100px;
   margin-bottom: 74px;
+  position: relative;
+}
+.driver__item {
+  position: relative;
+}
+.driver::before {
+  content: url("../images/content/courses-bg.svg");
+  position: absolute;
+  top: -50px;
+  z-index: 0;
+  right: 0;
 }
 .driver__item-head {
   display: flex;
@@ -73,8 +84,15 @@ p {
   border-radius: 0 20px 0 20px;
   margin-bottom: -3px;
 }
+.driver__item-image img {
+  object-fit: cover;
+  height: 100%;
+}
 
 .driver__item-image--mobile {
+  display: none;
+}
+.driver__item-add--mobile {
   display: none;
 }
 .driver__item-countwrapper .driver__item-headlink {
@@ -99,7 +117,6 @@ p {
   font-size: 18px;
   line-height: 135%;
   /* or 24px */
-
   color: #000000;
 }
 .driver__item-counter {
@@ -203,6 +220,12 @@ p {
   width: 105px;
   height: 105px;
 }
+.reviews__item.leader .reviews__item-image svg,
+.reviews__item.leader .reviews__item-image {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
 .reviews__item-name {
   font-size: 18px;
   font-weight: 700;
@@ -228,8 +251,8 @@ p {
   color: #474a57;
   margin-bottom: 21px;
 }
-.reviews__item-add--mobile {
-  display: none;
+.reviews__item-add--mobile a {
+  display: none !important;
 }
 .reviews__item-link {
   font-size: 18px;
@@ -447,7 +470,7 @@ p {
     margin-top: 40px;
   }
   .reviews__item-add--mobile a {
-    display: inline-block;
+    display: inline-block !important;
     padding: 9px 18px;
     padding-right: 40px;
     font-size: 14px;

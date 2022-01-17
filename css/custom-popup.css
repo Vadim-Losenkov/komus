@@ -158,6 +158,11 @@ a {
   margin-top: 180px;
 }
 
+.command-popup {
+  position: relative;
+  margin-top: 180px;
+}
+
 .default-popup-container {
   max-width: 1150px;
   width: 100%;
@@ -711,7 +716,6 @@ a {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   column-gap: 25px;
   font-family: "Fira Sans";
 }
