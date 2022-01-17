@@ -223,8 +223,11 @@ p {
 .reviews__item.leader .reviews__item-image svg,
 .reviews__item.leader .reviews__item-image {
   border-radius: 0;
-  width: 100%;
-  height: 100%;
+  height: auto;
+  margin-top: -13px;
+}
+.reviews__item.leader {
+  padding-left: 0;
 }
 .reviews__item-name {
   font-size: 18px;
@@ -238,6 +241,12 @@ p {
 }
 .reviews__item-info {
   position: relative;
+}
+.reviews__item.leader .reviews__item-info {
+  max-width: 210px;
+}
+.reviews__item.leader .reviews__item-name {
+  margin-bottom: 15px;
 }
 .reviews__item-count {
   position: absolute;

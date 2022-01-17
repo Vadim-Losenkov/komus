@@ -19,6 +19,19 @@ p {
 
 .marathon {
   font-family: 'Fira Sans';
+  position: relative;
+  z-index: 0;
+}
+.marathon::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: url('../images/content/marathon-bg.svg');
+  z-index: 0;
+}
+.marathon__inner {
+  position: relative;
+  z-index: 100;
 }
 .marathon__item-image {
   display: none;

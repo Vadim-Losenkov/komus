@@ -16,6 +16,24 @@ p {
 
 .archive {
   font-family: 'Fira Sans';
+  position: relative;
+  /* z-index: 2; */
+}
+.archive::before {
+  content: url('../images/content/archive-bg-2.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.archive__inner {
+  z-index: 1;
+  position: relative;
+}
+.archive::after {
+  content: url('../images/content/archive-bg-3.svg');
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .archive__back a {
   color: #015FA3;

@@ -486,9 +486,12 @@ li {
   .courses__item-descr {
     font-size: 12px;
   }
-  /*.courses__item-image img.courses__item-image--mobile {
+  .courses__item-image svg {
+    display: none;
+  }
+  .courses__item-image svg.courses__item-image--mobile {
     display: block;
-  } */
+  }
   
   .courses__item-count + .courses__item-count {
     margin-left: 15px;
