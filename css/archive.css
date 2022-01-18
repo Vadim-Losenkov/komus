@@ -17,6 +17,7 @@ p {
 .archive {
   font-family: 'Fira Sans';
   position: relative;
+  padding-bottom: 100px;
   /* z-index: 2; */
 }
 .archive::before {
@@ -63,6 +64,9 @@ p {
 .archive__info-item {
   margin-bottom: 60px;
 }
+.archive__info-item:last-child {
+  margin-bottom: 0;
+}
 
 .archive__info-date {
   font-size: 18px;
@@ -93,6 +97,9 @@ p {
   font-weight: 400;
   padding-right: 25px;
 }
+.footer {
+  margin-top: 0;
+}
 .archive__info-link::before {
   content: "";
   position: absolute;
@@ -106,10 +113,4 @@ p {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-}
-
-@media screen and (max-width:720px){
-  #svg-animation-bottom {
-    top: -75px!important;
-  }
 }
